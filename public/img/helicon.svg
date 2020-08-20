@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="prefix__helicon" width="41.242" height="57.173" viewBox="0 0 41.242 57.173">
+    <defs>
+        <linearGradient id="prefix__linear-gradient" x1=".347" x2=".898" y1=".871" y2=".29" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#001fff"/>
+            <stop offset="1" stop-color="#f6f6f9"/>
+        </linearGradient>
+        <linearGradient id="prefix__linear-gradient-2" x1=".038" x2=".914" y1=".515" y2=".492" xlink:href="#prefix__linear-gradient"/>
+        <linearGradient id="prefix__linear-gradient-3" x1=".291" x2=".971" y1=".355" y2=".67" xlink:href="#prefix__linear-gradient"/>
+        <linearGradient id="prefix__linear-gradient-4" x1="-.072" x2=".999" y1=".58" y2=".58" xlink:href="#prefix__linear-gradient"/>
+    </defs>
+    <path id="prefix__Контур_18" fill="url(#prefix__linear-gradient)" d="M90.569 168.35s3.446 2.177 15.03 1.477c3.213-.181 9.147-.881 11.972-3.058 6.426-4.872 8.836-14.978-2.41-25.369 5.96 7.955-.518 18.269-7.8 12.309s-24.67 10.209-16.792 14.641z" data-name="Контур 18" transform="translate(-81.751 -112.792)"/>
+    <path id="prefix__Контур_19" fill="url(#prefix__linear-gradient-2)" d="M135.916 142.1c5.934 9.64-1.84 17.414-8.525 11.842-4.017-3.343-4.82-1.814-6.686 3.809l-4.405 4.327c28.5 4.847 24.047-15.91 19.616-19.978z" data-name="Контур 19" transform="translate(-102.299 -113.311)"/>
+    <path id="prefix__Контур_20" fill="url(#prefix__linear-gradient-3)" d="M105.077 146.3s3.135 11.583-10.391 17.932-5.1 8.422-5.1 8.422-10.754-4.042-.855-11.868 11.552-8.837 16.346-14.486z" data-name="Контур 20" transform="translate(-78.767 -116.422)"/>
+    <path id="prefix__Контур_21" fill="url(#prefix__linear-gradient-4)" d="M83.967 31s16.092 20.186 3.084 32.651-25.6 17.543-13.708 23.581c-9.329-.259-18.942-10-.907-25.473S85.211 35.276 83.967 31z" data-name="Контур 21" transform="translate(-62.271 -31)"/>
+</svg>

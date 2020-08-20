@@ -1,0 +1,21 @@
+.breadcrumbs{
+	display: flex;
+	align-self: flex-start;
+	color: #001fff;
+	font-size: 1rem;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	cursor: pointer;
+	a{
+		text-decoration: none;
+		color: #001fff;
+		display: flex;
+		align-items: center;
+	}
+	svg{
+		width: 34px;
+		height: 34px;
+		transform: translateY(-15px);
+	}
+}

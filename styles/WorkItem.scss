@@ -1,0 +1,133 @@
+.work-jobs-list-item{
+	width: 100%;
+	border-radius: 30px;
+	background-color: #f6f6f6;
+	box-sizing: border-box;
+	padding: 40px 260px 40px 50px;
+	position: relative;
+	cursor: pointer;
+	&:not(:last-child){
+		margin-bottom: 30px;
+	}
+	.work-jobs-list-item-name{
+		color: #363636;
+		font-size: 1.5rem;
+		margin-top: 0px;
+		margin-bottom: 55px;
+	}
+	.work-jobs-list-item-description{
+		color: #363636;
+		font-size: 1rem;
+		margin-bottom: 13px;
+		line-height: 1.35rem;
+	}
+	.work-jobs-list-item-information{
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		.work-jobs-list-item-information-proposals{
+			color: #363636;
+			font-size: 1rem;
+			margin-right: 45px;
+			span{
+				color: #001fff;
+			}
+		}
+		.work-jobs-list-item-information-payments{
+			color: #363636;
+			font-size: 1rem;
+			margin-right: 30px;
+			display: flex;
+			align-items: center;
+			svg{
+				color: #363636;
+				font-size: 1.4rem;
+				margin-left: 15px;
+			}
+		}
+		.work-jobs-list-item-information-location{
+			color: #363636;
+			font-size: 1rem;
+			display: flex;
+			align-items: center;
+			svg{
+				margin-left: 10px;
+				font-size: 1.4rem;
+			}
+		}
+	}
+	.work-jobs-list-item-labels{
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		.work-jobs-list-item-labels-item{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 36px;
+			box-sizing: border-box;
+			padding: 0px 10px;
+			color: #ffffff;
+			background-color: #707070;
+			&:not(:last-child){
+				margin-right: 15px;
+			}
+		}
+	}
+	.work-jobs-list-item-price{
+		display: flex;
+		align-items: center;
+		font-size: 1.9rem;
+		.work-jobs-list-item-price-value{
+			color: #001fff;
+			margin-left: 5px;
+		}
+	}
+	.work-jobs-list-item-elected{
+		position: absolute;
+		top: 25px;
+		right: 35px;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		border-radius: 50%;
+		svg{
+			font-size: 1.4rem;
+			margin-top: 3px;
+		}
+	}
+	.work-jobs-list-item-btns{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 25px;
+		right: 35px;
+		.work-jobs-list-item-btn{
+			width: 215px;
+			height: 65px;
+			border-radius: 33px;
+			background-color: #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			outline: none;
+			color: #001fff;
+			font-family: 'HelveticaRoundedLT-Bold';
+			font-size: 1.25rem;
+			&:not(:last-child){
+				margin-bottom: 20px;
+			}
+		}
+		.work-jobs-list-item-blue-btn{
+			background-color: #001fff;
+			color: #ffffff;
+		}
+		.work-jobs-list-item-red-btn{
+			color: #f92b4e;
+		}
+	}
+}

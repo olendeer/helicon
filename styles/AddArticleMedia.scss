@@ -1,0 +1,47 @@
+@media screen and (max-width: 1600px){
+	@media screen and (max-width: 1600px){
+		.add-article-content{
+			.article-information{
+				.article-name{
+					width: 45%;
+					height: 36px;
+					font-size: 0.6rem;
+					padding: 0px 15px;
+					margin-bottom: 10px;
+				}
+				.article-description{
+					height: 150px;
+					border-radius: 10px;
+					margin-bottom: 25px;
+					font-size: 0.6rem;
+					padding: 10px 15px;
+				}
+				.article-btns{
+					.article-cancel-btn{
+						font-size: 0.65rem;
+						margin-right: 30px;
+					}
+					.article-post-btn{
+						width: 120px;
+						height: 40px;
+						font-size: 0.65rem;
+					}
+				}
+			}
+			.add-article-image{
+				margin-left: 40px;
+				width: 300px;
+				min-width: 300px;
+				height: 260px;
+				border-radius: 15px;
+				.image-circle{
+					width: 70px;
+					height: 70px;
+					svg{
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+	}
+}

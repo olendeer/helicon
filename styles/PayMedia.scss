@@ -1,0 +1,64 @@
+@media screen and (max-width: 1600px){
+	.pay-content{
+		margin-top: 20px;
+		.form-pay{
+			width: 740px;
+			min-width: 740px;
+			padding: 15px 20px 80px 20px;
+			margin-right: 20px;
+			border-radius: 15px;
+			.form-header{
+				font-size: 0.7rem;
+				margin-bottom: 10px;
+			}
+			.form-title{
+				font-size: 0.65rem;
+				margin-top: 10px;
+			}
+			input{
+				font-size: 0.65rem;
+				height: 26px;
+				margin-bottom: 10px;
+			}
+			.middle-input{
+				width: 310px;
+			}
+			.small-input{
+				width: 190px;
+			}
+			.smaller-input{
+				width: 150px;
+			}
+			.accept-form{
+				margin-top: 10px;
+				.accept-checkbox{
+					width: 12px;
+					height: 12px;
+					margin-right: 8px;
+				}
+				.accept-title{
+					color: #848484;
+					font-size: 0.6rem;
+				}
+			}
+			.pay-btn{
+				bottom: 20px;
+				width: 120px;
+				left: calc(50% - 60px);
+				height: 40px;
+				border-radius: 28px;
+				font-size: 0.9rem;
+			}
+		}
+		.total-pay{
+			border-radius: 15px;
+			height: 90px;
+			max-width: 100%;
+			padding: 0px 20px;
+			font-size: 1.2rem;
+			.total-price{
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

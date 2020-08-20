@@ -1,0 +1,94 @@
+@media screen and (max-width: 1600px){
+	.content, .wrapper{
+		position: relative;
+	}
+	.message-content-wrapper{
+		.messages-content{
+			border-radius: 15px;
+			.message-chating{
+				.messages-send{
+					height: 60px;
+					padding-left: 20px;
+					padding-right: 25px;
+					svg{
+						font-size: 0.9rem;
+					}
+					.messages-send-input{
+						margin-left: 12px;
+						height: 30px;
+						padding: 0px 15px;
+						font-size: 0.6rem;
+					}
+					.create-an-offer{
+						font-size: 0.65rem;
+						margin-left: 30px;
+					}
+				}
+				.message-chating-header{
+					padding: 10px 0px 10px 20px;
+					.message-chating-interlocutor{
+						.interlocutor-avatar{
+							width: 40px;
+							height: 40px;
+							margin-right: 10px;
+						}
+						.interlocutor-info{
+							.interlocutor-name{
+								font-size: 0.75rem;
+							}
+							.interlocutor-visited{
+								font-size: 0.6rem;
+							}
+						}
+					}
+				}
+			}
+			.message-all{
+				min-width: 350px;
+				padding: 10px 8px 5px 16px;
+				.message-all-header{
+					font-size: 0.75rem;
+					margin-bottom: 10px;
+				}
+				.message-all-search{
+					height: 30px;
+					margin-bottom: 15px;
+					padding: 0px 11px;
+					svg{
+						font-size: 0.7rem;
+						margin-right: 6px;
+					}
+					input{
+						font-size: 0.65rem;
+					}
+				}
+				.message-all-list{
+					padding-bottom: 15px;
+					.messages-list-item{
+						&:not(:last-child){
+							margin-bottom: 10px;
+						}
+						.message-owner-avatar{
+							width: 40px;
+							height: 40px;
+							margin-right: 6px;
+						}
+						.message-info{
+							.message-owner-name{
+								font-size: 0.65rem;
+							}
+							.message-owner-text{
+								font-size: 0.55rem;
+							}
+						}
+						.message-time{
+							color: #848484;
+							font-size: 0.45rem;
+							margin-bottom: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

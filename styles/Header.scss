@@ -1,0 +1,90 @@
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 125px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	padding-left: 75px;
+	padding-right: 33px;
+	.helicon{
+		display: flex;
+		text-decoration: none;
+		.logo{
+			margin-right: 135px;
+		}
+		h2{
+			font-size: 1.5rem;
+			  font-weight: bold;
+			  color: #404040;
+		}
+	}
+	.header-singin{
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		svg{
+			color: #848484;
+			font-size: 1rem;
+			margin-right: 25px;
+		}
+		.singin-btn{
+			padding: 0px;
+			border: none;
+			outline: none;
+			background-color: transparent;
+			color: #001fff;
+			font-size: 1.15rem;
+			font-family: "HelveticaRoundedLT-Bold";
+			cursor: pointer;
+		}
+	}
+	.header-nav{
+		display: flex;
+		align-items: center;
+		.hello-user{
+			font-size: 0.8rem;
+			color: #404040;
+			margin-left: 70px;
+		}
+		.avatar{
+			max-width: 65px;
+			max-height: 65px;
+			margin-left: 30px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.links-user{
+			display: flex;
+			align-items: center;	
+			position: relative;
+			.link-user{
+				cursor: pointer;
+				perspective: 1000px;
+				svg path{
+					fill: #848484;
+				}
+				&:nth-child(3){
+					margin-left: 3px;
+				}
+				&:not(:last-child){
+					margin-right: 25px;
+				}
+				&-active {
+					svg path {
+						fill: #001fff;
+					}
+				}
+			}
+		}
+	}
+}
+.active-header-icon{
+	path{
+		fill: #001fff !important;
+	}
+}

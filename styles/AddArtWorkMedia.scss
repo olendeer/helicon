@@ -1,0 +1,74 @@
+@media screen and (max-width: 1600px){
+	.add-artwork-content{
+		.art-work-header{
+			font-size: 0.6rem;
+			margin-bottom: 10px;
+		}
+		.art-work-select-wrap{
+			display: flex;
+		}
+		.art-work-select{
+			width: 280px;
+			height: 36px;
+			margin-right: 30px;
+			margin-bottom: 15px;
+			.art-work-select-active{
+				padding-left: 20px;
+				padding-right: 20px;
+				justify-content: space-between;
+				color: #848484;
+				font-size: 0.6rem;
+			}
+		}
+		.artwork-information{
+			.artwork-filters{
+				height: 90px;
+				margin-bottom: 20px;
+				.filter-item:not(:nth-child(3n)){
+					margin-right: 50px;
+				}
+			}
+			.artwork-org{
+				margin-bottom: 10px;
+				.add-artwork-input{
+					width: 45%;
+					height: 36px;
+					font-size: 0.6rem;
+					padding: 0px 15px;
+				}
+			}
+			.artwork-description{
+				height: 150px;
+				border-radius: 10px;
+				margin-bottom: 25px;
+				font-size: 0.6rem;
+				padding: 10px 15px;
+			}
+			.artwork-btns{
+				.artwork-cancel-btn{
+					font-size: 0.65rem;
+					margin-right: 30px;
+				}
+				.artwork-save-btn{
+					width: 120px;
+					height: 40px;
+					font-size: 0.65rem;
+				}
+			}
+		}
+		.add-artwork-image{
+			margin-left: 40px;
+			width: 300px;
+			min-width: 300px;
+			height: 380px;
+			border-radius: 15px;
+			.image-circle{
+				width: 70px;
+				height: 70px;
+				svg{
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}

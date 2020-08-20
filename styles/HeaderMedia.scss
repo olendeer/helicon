@@ -1,0 +1,67 @@
+@media screen and (max-width: 1600px){
+	.header{
+		height: 55px;
+		border-top-left-radius: 70px;
+		padding-right: 12px;
+		padding-left: 38px;
+		.helicon{
+			.logo{
+				width: 20px;
+				margin-right: 55px;
+			}
+			h2{
+				font-size: 0.8rem;
+				font-weight: bold;
+				color: #404040;
+			}
+		}
+		.header-singin{
+			cursor: pointer;
+			svg{
+				color: #848484;
+				font-size: 0.7rem;
+				margin-right: 10px;
+			}
+			.singin-btn{
+				color: #001fff;
+				font-size: 0.6rem;
+				margin-right: 15px;
+			}
+		}
+		.header-nav{
+			.hello-user{
+				font-size: 0.5rem;
+				color: #404040;
+				margin-left: 40px;
+			}
+			.avatar{
+				max-width: 35px;
+				max-height: 35px;
+				margin-left: 15px;
+			}
+			.links-user{
+				display: flex;
+				align-items: center;
+				.link-user{
+					display: flex;
+					align-items: center;
+					svg{
+						width: 20px;
+						height: 20px;
+					}
+					&:nth-child(2){
+						svg{
+							max-width: 16px;
+						}
+					}
+					&:nth-child(3){
+						margin-left: 4px;
+					}
+					&:not(:last-child){
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}

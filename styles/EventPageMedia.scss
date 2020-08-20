@@ -1,0 +1,122 @@
+@media screen and (max-width: 1600px){
+	.event-content{
+		margin-top: 20px;
+	}
+	.event-preview{
+		height: 360px;
+		border-radius: 15px;
+		.event-preview-header{
+			.event-preview-image{
+				max-height: 240px;
+			}
+			.event-calendar{
+				left: -60px;
+				width: 50px;
+				height: 50px;
+				border-radius: 10px;
+				.event-calendar-header{
+					height: 15px;
+					min-height: 15px;
+				}
+				.event-calendar-body{
+					font-size: 1.3rem;
+				}
+			}
+		}
+		.event-preview-info{
+			padding: 0px 25px 20px 25px;
+			margin-top: 20px;
+			.event-preview-info-description{
+				.event-preview-info-date{
+					font-size: 0.8rem;
+					margin-bottom: 6px;
+				}
+				.event-preview-info-text{
+					font-size: 0.9rem;
+				}
+				.event-preview-info-location{
+					font-size: 0.6rem;
+					margin-top: 8px;
+				}
+			}
+			.event-preview-btns{
+				.interested-btn{
+					margin-right: 20px;
+					svg{
+						font-size: 1rem;
+						margin-right: 6px;
+					}
+					font-size: 0.8rem;
+				}
+				.invite-btn{
+					svg{
+						margin-right: 6px;
+						font-size: 1rem;
+					}
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+	.detailed-information{
+		width: 49.2%;
+		height: auto;
+		margin-top: 14px;
+		border-radius: 15px;
+		padding: 15px 15px 50px 20px;
+		.detailed-information-header{
+			font-size: 0.8rem;
+			margin-bottom: 10px;
+		}
+		.all-detailed-information{
+			margin-bottom: 15px;
+			.detailed-information-item{
+				font-size: 0.7rem;
+				&:not(:last-child){
+					margin-bottom: 10px;
+				}
+				svg{
+					margin-right: 10px;
+					font-size: 1rem;
+				}
+			}
+		}
+		.detailed-description{
+			font-size: 0.7rem;
+		}
+	}
+	.event-map{
+		width: 49.2%;
+		height: 340px;
+		margin-top: 15px;
+		border-radius: 15px;
+		iframe{
+			height: 260px;
+		}
+		.event-map-description{
+			height: 100px;
+			padding-left: 15px;
+			padding-top: 10px;
+			.event-city{
+				font-size: 0.8rem;
+				margin-bottom: 6px;
+			}
+			.event-organizer{
+				span{
+					font-size: 0.7rem;
+					margin-right: 10px;
+				}
+				.event-owner{
+					.event-owner-name{
+						margin-right: 20px;
+						font-size: 0.7rem;
+					}
+					.event-owner-avatar{
+						width: 30px;
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
+}

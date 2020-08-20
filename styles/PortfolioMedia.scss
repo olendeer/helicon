@@ -1,0 +1,46 @@
+@media screen and (max-width: 1600px){
+	.portfolio{
+		padding: 8px 15px 8px 15px;
+		height: auto;
+		border-radius: 15px;
+		.portfolio-header{
+			.portfolio-header-item{
+				font-size: 0.6rem;
+				width: 70px;
+				height: 25px;
+				&:not(:last-child){
+					margin-right: 15px;
+				}
+			}
+		}
+		.portfolio-list{
+			margin-top: 15px;
+			.portfolio-item{
+				margin-right: 15px;
+				margin-bottom: 15px;
+				.portfolio-item-info{
+					.portfolio-item-price{
+						font-size: 0.65rem;
+					}
+					.portfolio-item-views{
+						font-size: 0.6rem;
+					}
+				}
+			}
+		}
+	}
+	.portfolio-full{
+		height: auto;
+		padding-bottom: 70px;
+		.portfolio-list{
+			height: 70%;
+		}
+		.add-portfolio-item{
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			bottom: 20px;
+			font-size: 1rem;
+		}
+	}
+}

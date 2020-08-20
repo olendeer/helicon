@@ -1,0 +1,26 @@
+@media screen and (max-width: 1600px){
+	#__next{
+		margin-bottom: 100px;
+	}
+	.wrapper{
+		// width: calc(100% - 30px);
+		// min-height: 850px;
+		// margin-left: 10px;
+		// margin-right: 10px;
+		// margin-top: 10px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		&:before{
+			top: -1px;
+			left: 90px;
+		}
+	}
+	.content{
+		width: 100%;
+		border-top-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		padding: 22px;
+	}
+}

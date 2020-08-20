@@ -1,0 +1,179 @@
+@media screen and (max-width: 1600px){
+	.opened-auction{
+		margin-top: 30px;
+		margin-bottom: 40px;
+		width: 100%;
+		justify-content: space-between;
+	}
+	.opened-auction-image{
+		margin-right: 15px;
+		max-height: 300px;
+		border-radius: 10px;
+	}
+	.opened-auction-description{
+		padding-right: 10px;
+	}
+	.opened-auction-description-name{
+		font-size: 1.1rem;
+	}
+	.opened-auction-description-estimations{
+		font-size: 0.65rem;
+		.likes{
+			margin-right: 10px;
+		}
+		.views-hours{
+			margin-left: 15px;
+		}
+	}
+	.opened-auction-description-text{
+		.opened-auction-description-text-header{
+			font-size: 0.7rem;
+		}
+		.opened-auction-description-text-paragraph{
+			font-size: 0.6rem;
+			padding-bottom: 10px;
+		}
+		.auction-data{
+			font-size: 0.55rem;
+			.watchers-count{
+				margin-right: 20px;
+			}
+		}
+		.item-location{
+			padding-top: 6px;
+			font-size: 0.6rem;
+		}
+		.returns{
+			font-size: 0.6rem;
+			span{
+				font-size: 0.5rem;
+			}
+		}
+	}
+	
+	.opened-auction-price-data{
+		min-width: 380px;
+		.current-price-data{
+			margin-bottom: 15px;
+			.wrap-price{
+				.opened-auction-price-label{
+					font-size: 0.55rem;
+				}
+				.opened-auction-price{
+					font-size: 1.7rem;
+				}
+			}
+			.wrap-price-btns{
+				margin-left: 3px;
+				width: 135px;
+				.price-btn{
+					width: 100px;
+					height: 24px;
+					font-size: 0.6rem;
+				}
+				.bid-blue-btn{
+					width: 100px;
+					height: 24px;
+					font-size: 0.6rem;
+				}
+				.add-bid{
+					border: none;
+					width: 100px;
+					height: 24px;
+				}
+				.other-information{
+					font-size: 0.5rem;
+					&:last-child{
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+	.auction-detailed-information{
+		flex: 2;
+		height: auto;
+		padding: 10px 10px 20px 25px;
+		border-radius: 15px;
+		.auction-detailed-information-header{
+			.auction-detailed-information-header-item{
+				font-size: 0.8rem;
+				&:not(:last-child){
+					margin-right: 20px;
+				}
+			}
+		}
+		.auction-detailed-information-text{
+			padding-bottom: 10px;
+			font-size: 0.7rem;
+			.auction-detailed-information-text-categories{
+				margin-top: 0px;
+				margin-bottom: 20px;
+				.categories-line{
+					&:not(:last-child){
+						margin-bottom: 5px;
+					}
+					.categorie-name{
+						width: 70px;
+					}
+				}
+			}
+			.auction-detailed-information-text-header-bold{
+				font-size: 1.1rem;
+				margin-bottom: 5px;
+			}
+		}
+		.auction-detailed-returns{
+			margin-top: 10px;
+			.auction-detailed-returns-header{
+				font-size: 0.6rem;
+				margin-bottom: 4px;
+			}
+			.auction-detailed-returns-text{
+				font-size: 0.5rem;
+			}
+		}
+	}
+	
+	.auction-bids-chat{
+		flex: 1;
+		margin-left: 30px;
+		width: 26%;
+		max-width: 380px;
+		min-width: 380px;
+		border-radius: 15px;
+		.auction-bids-chat-header{
+			height: 40px;
+			font-size: 0.8rem;
+		}
+		.auction-bids-chat-list{
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
+			padding: 15px 20px 12px 20px;
+			.bids-chat-item{
+				&:not(:last-child){
+					margin-bottom: 10px;
+				}
+				.bid-owner{
+					.bid-owner-avatar{
+						width: 32px;
+						height: 32px;
+						margin-right: 12px;
+					}
+					.bid-owner-info{
+						.bid-event{
+							font-size: 0.7rem;
+						}
+						.bid-price{
+							font-size: 1rem;
+						}
+					}
+				}
+				.bid-time{
+					font-size: 0.6rem;
+				}
+			}
+		}
+	}
+}

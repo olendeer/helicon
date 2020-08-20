@@ -1,0 +1,132 @@
+.analitics-content-wrapper{
+	width: 100%;
+}
+.analitics-content-wrapper-header{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	.withdraw{
+		display: flex;
+		margin-bottom: 25px;
+		.withdraw-price{
+			color: #001fff;
+			font-size: 1.1rem;
+			margin-right: 25px;
+		}
+		.withdraw-label{
+			color: #848484;
+			font-size: 1.1rem;
+		}
+	}
+}
+.analitics-content{
+	display: flex;
+	align-items: center;
+	.analitics-chart{
+		box-sizing: border-box;
+		padding: 30px 30px 50px 30px;
+		border-radius: 30px;
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+		background-color: #ffffff;
+		display: flex;
+		.chart{
+			position: relative;
+		}
+		.chart-data{
+			display: flex;
+			flex-direction: column;
+			margin-left: 20px;
+			.chart-data-item{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding-bottom: 15px;
+				border-bottom: 1px solid #848484;
+				width: 300px;
+				position: relative;
+				&:not(:last-child){
+					margin-bottom: 35px;
+				}
+				.chart-data-item-name{
+					color: #848484;
+					font-size: 1.4rem;
+					margin-bottom: 15px;
+				}
+				.chart-data-item-value{
+					color: rgb(0, 31, 255);
+					font-size: 1.75rem;
+					font-weight: 800;
+				}
+				.chart-data-item-arrow{
+					position: absolute;
+					right: -10px;
+					bottom: 10px;
+					svg{
+						font-size: 2rem;
+						color: #5eceb1;
+						transform: rotateZ(180deg);
+					}
+				}
+			}
+		}
+	}
+}
+.analitics-up{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 50px;
+}
+.analitics-up-header{
+	color: #001fff;
+	font-size: 1.4rem;
+	margin-bottom: 20px;
+}
+.analitics-up-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #848484;
+	&:not(:last-child){
+		margin-bottom: 20px;
+	}
+	.analitics-up-item-header{
+		color: #848484;
+		font-size: 1rem;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.analitics-up-variables{
+		display: flex;
+		margin-bottom: 20px;
+		.analitics-up-variables-btns{
+			width: 138px;
+			height: 43px;
+			border-radius: 22px;
+			border: solid 0.5px #001fff;
+			background-color: #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #848484;
+			font-weight: 700;
+			&:first-child{
+				margin-right: 15px;
+			}
+		}
+	}
+	.analitics-up-start{
+		width: 138px;
+		height: 43px;
+		border-radius: 22px;
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+		background-color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #001fff;
+		cursor: pointer;
+	}
+}

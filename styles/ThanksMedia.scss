@@ -1,0 +1,71 @@
+.thanks-content{
+	.thanks-info{
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #848484;
+		.thanks-image{
+			width: 245px;
+			height: auto;
+			margin-right: 20px;
+			margin-bottom: -30px;
+			transform: translateY(-30px)
+		}
+		.thanks-text{
+			.thanks-ordering{
+				font-size: 1.1rem;
+				margin: 0px;
+				margin-bottom: 4px;
+			}
+			.thanks-all-text{
+				font-size: 0.9rem;
+				span{
+					text-decoration: underline;
+				}
+			}
+			.change-email{
+				cursor: pointer;
+				font-size: 0.65rem;
+				margin-bottom: 10px;
+			}
+			.informated{
+				font-size: 0.7rem;
+				margin-top: 10px;
+			}
+		}
+	}
+	.purchased{
+		.purchased-item{
+			width: 335px;
+			height: 160px;
+			border-radius: 15px;
+			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+			background-color: #ffffff;
+			display: flex;
+			box-sizing: border-box;
+			padding: 15px 15px;
+			img{
+				width: auto;
+				height: 100%;
+				margin-right: 15px;
+				border-radius: 5px;
+			}
+			.purchased-art-info{
+				.purchased-art-info-name{
+					font-size: 1rem;
+					margin-bottom: 4px;
+				}
+				.owner-info{
+					.art-owner-name{
+						font-size: 0.8rem;
+					}
+					.art-owner-avatar{
+						max-width: 30px;
+						max-height: 30px;
+						margin-left: 10px;
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+	}
+}

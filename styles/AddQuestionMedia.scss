@@ -1,0 +1,72 @@
+@media screen and (max-width: 1600px){
+	.add-quest-wrapper{
+		.add-quest-content{
+			width: 800px;
+			height: 370px;
+			border-radius: 15px;
+			padding: 10px 20px;
+			.input-question{
+				width: 100%;
+				height: 30px;
+				font-size: 0.7rem;
+				margin-bottom: 10px;
+			}
+			.add-quest-body{
+				.add-quest-title{
+					font-size: 0.7rem;
+					margin-bottom: 10px;
+				}
+				.add-quest-or{
+					margin-bottom: 15px;
+					.or{
+						margin-left: 15px;
+						margin-right: 15px;
+						font-size: 0.7rem;
+					}
+				}
+				.add-quest-select{
+					.add-quest-select-header{
+						margin-bottom: 10px;
+						font-size: 0.65rem;
+					}
+					.add-quest-select-item{
+						&:not(:last-child){
+							margin-bottom: 7px;
+						}
+						&:last-child{
+							margin-bottom: 15px;
+						}
+						.add-quest-select-item-checkbox{
+							width: 10px;
+							height: 10px;
+							margin-right: 10px;
+							&-active{
+								background-color: #001fff;
+							}
+						}
+						.add-quest-select-item-title{
+							font-size: 0.6rem;
+						}
+					}
+				}
+				.add-quest-btns{
+					display: flex;
+					align-self: flex-end;
+					margin-top: 20px;
+					.cancel-btn{
+						width: 110px;
+						height: 45px;
+						font-size: 0.8rem;
+						margin-right: 15px;
+					}
+					.add-btn{
+						width: 270px;
+						height: 45px;
+						font-size: 0.8rem;
+					}
+				}
+			}
+	
+		}
+	}
+}

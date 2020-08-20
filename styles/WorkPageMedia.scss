@@ -1,0 +1,52 @@
+@media screen and (max-width: 1600px){
+	.work-content{
+		border-radius: 15px;
+		padding: 15px 15px 40px 20px;
+	}
+	.work-top-nav{
+		margin-bottom: 50px;
+		.work-search-bar{
+			width: 270px;
+			height: 30px;
+			padding-left: 15px;
+			padding-right: 11px;
+			margin-right: 40px;
+			.work-search-input{
+				width: 100%;
+				border: none;
+				outline: none;
+				height: 100%;
+				font-size: 0.55rem;
+				background-color: transparent;
+				font-family: 'HelveticaRoundedLT-Bold';
+			}
+			svg{
+				max-height: 50%;
+			}
+		}
+		.work-nav-list{
+			.work-nav-list-item{
+				font-size: 0.65rem;
+				&:first-child{
+					width: 270px;
+					display: flex;
+					justify-content: flex-end;
+				}
+				.work-nav-list-item-notification{
+					width: 15px;
+					height: 15px;
+					top: -10px;
+					right: -20px;
+					font-size: 0.55rem;
+				}
+				&:not(:last-child){
+					margin-right: 40px;
+				}
+			}
+		}
+	}
+	
+	.work-jobs-list{
+		display: flex;
+	}
+}

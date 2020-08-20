@@ -1,0 +1,165 @@
+@media screen and (max-width: 1600px){
+	.work-submit-wrapper{
+		.work-submit-content{
+			margin-top: 70px;
+			width: 700px;
+			border-radius: 15px;
+			margin-bottom: 80px;
+			.work-submit-close{
+				position: absolute;
+				top: -3px;
+				right: -20px;
+				font-size: 1rem;
+			}
+			.work-submit-header{
+				padding-left: 15px;
+				font-size: 0.8rem;
+				border-top-right-radius: 15px;
+				border-top-left-radius: 15px;
+				height: 46px;
+				margin-bottom: 10px;
+			}
+			.work-submit-body{
+				.work-submit-body-block{
+					padding: 0px 15px;
+				}
+				.work-submit-info-block{
+					margin-bottom: 10px;
+					justify-content: space-between;
+					.work-submit-description{
+						width: 340px;
+						border-radius: 10px;
+						margin-right: 20px;
+						font-size: 0.7rem;
+						line-height: 0.9rem;
+						padding: 10px 15px;
+					}
+					.work-submit-org{
+						margin-right: 50px;
+						.work-submit-org-item{
+							font-size: 0.7rem;
+							&:not(:last-child){
+								margin-bottom: 10px;
+							}
+							svg{
+								width: 16px;
+								height: 18px;
+								margin-right: 10px;
+								g > g > path{
+									fill: #001fff;
+								}
+							}
+						}
+					}
+				}
+				.work-submit-body-terms{
+					width: 100%;
+					.work-submit-body-terms-header{
+						font-size: 0.7rem;
+						height: 30px;
+						padding-left: 20px;
+						padding-right: 30px;
+						margin-bottom: 10px;
+					}
+				}
+				.work-submit-body-type{
+					.work-submit-body-type-header{
+						font-size: 0.6rem;
+						margin-bottom: 8px;
+					}
+					.work-submit-body-type-item{
+						margin-bottom: 8px;
+						.work-submit-body-type-checkbox{
+							width: 10px;
+							height: 10px;
+							margin-right: 10px;
+						}
+						.work-submit-body-type-item-name{
+							font-size: 0.65rem;
+						}
+					}
+				}
+				.work-submit-type-content{
+					border-radius: 20px;
+					margin-bottom: 10px;
+					.submit-type-content-item{
+						height: 40px;
+						padding-left: 20px;
+						padding-right: 15px;
+						.submit-type-content-title{
+							font-size: 0.7rem;
+						}
+						.submit-type-content-input{
+							border-radius: 17px;
+							width: 100px;
+							height: 24px;
+							margin-left: 10px;
+						}
+						.submit-type-content-select{
+							width: 90px;
+							height: 24px;
+							box-sizing: border-box;
+							.submit-type-content-select-active{
+								font-size: 0.7rem;
+								padding: 0px 10px;
+							}
+							.submit-type-content-select-list{
+								padding: 10px 10px;
+								.submit-type-content-select-list-item{
+									&:not(:last-child){
+										margin-bottom: 2px;
+									}
+								}
+							}
+						}
+					}
+				}
+				.add-milestone{
+					font-size: 0.7rem;
+					margin-bottom: 10px;
+				}
+				.additional-details{
+					.additional-details-header{
+						height: 30px;
+						padding-left: 20px;
+						font-size: 0.7rem;
+						margin-bottom: 15px;
+					}
+					.additional-details-content{
+						.cover-letter{
+							margin-bottom: 10px;
+							height: 120px;
+							border-radius: 15px;
+							padding: 10px 12px;
+							font-size: 0.6rem;
+						}
+						label[for="additional-image"]{
+							height: 40px;
+							font-size: 0.7rem;
+							margin-bottom: 10px;
+						}
+						.additional-image-info{
+							font-size: 0.55rem;
+							margin-bottom: 25px;
+						}
+					}
+				}
+				.work-submit-btns{
+					margin-left: 10px;
+					margin-bottom: 30px;
+					.submit-cancel{
+						width: 130px;
+						height: 45px;
+						margin-right: 10px;
+						font-size: 0.7rem;
+					}
+					.submit-proposal{
+						width: 180px;
+						height: 45px;
+						font-size: 0.7rem;
+					}
+				}
+			}
+		}
+	}
+}

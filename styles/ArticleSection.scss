@@ -1,0 +1,53 @@
+.current-article{
+	margin-top: 50px;
+	margin-bottom: 60px;
+	display: flex;
+	width: 100%;
+	margin-left: -5px;
+	.current-article-image{
+		margin-right: 50px;
+	}
+	.current-article-data{
+		width: 100%;
+		.current-article-header{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 50px;
+			.current-article-header-data{
+				.current-article-name{
+					color: #404040;
+					font-size: 1.5rem;
+					line-height: 2.4rem;
+					margin: 0;
+				}
+				.current-article-owner{
+					color: #848484;
+					font-size: 0.9rem;
+				}
+			}
+			.current-article-estimations{
+				display: flex;
+				margin-top: 10px;
+				color: #848484;
+				font-size: 0.75rem;
+				.likes{
+					margin-right: 13px;
+					svg{
+						color: #f92b4e;
+					}
+				}
+				div{
+					display: flex;
+					svg{
+						margin-left: 9px;
+						margin-top: 1px;
+					}
+				}
+			}
+		}
+		.current-article-text{
+			color: #404040;
+			font-size: 0.9rem;
+		}
+	}
+}

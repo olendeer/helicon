@@ -1,0 +1,124 @@
+.add-quest-wrapper{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.add-quest-content{
+		width: 1400px;
+		height: 800px;
+		border-radius: 30px;
+		box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+		background-color: #f6f6f6;
+		box-sizing: border-box;
+		padding: 40px 60px;
+		.input-question{
+			width: 100%;
+			height: 60px;
+			border: none;
+			outline: none;
+			background-color: transparent;
+			font-family: "HelveticaRoundedLT-Bold";
+			font-size: 1.4rem;
+			border-bottom:  1px solid #848484;
+			margin-bottom: 30px;
+		}
+		.add-quest-body{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			.add-quest-title{
+				color: #001fff;
+				font-size: 1.25rem;
+				margin-bottom: 10px;
+			}
+			.add-quest-or{
+				width: 100%;
+				display: flex;
+				align-items: center;
+				margin-bottom: 25px;
+				.line{
+					width: 100%;
+					height: 1px;
+					background-color: #848484;
+				}
+				.or{
+					color: #848484;
+					margin-left: 45px;
+					margin-right: 45px;
+					font-size: 1.25rem;
+				}
+			}
+			.add-quest-select{
+				display: flex;
+				flex-direction: column;
+				border-bottom:  1px solid #848484;
+				.add-quest-select-header{
+					margin-bottom: 30px;
+					font-size: 1.25rem;
+					color: #848484;
+				}
+				.add-quest-select-item{
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+					&:not(:last-child){
+						margin-bottom: 12px;
+					}
+					&:last-child{
+						margin-bottom: 35px;
+					}
+					.add-quest-select-item-checkbox{
+						width: 15px;
+						height: 15px;
+						border: solid 1px #001fff;
+						background-color: transparent;
+						border-radius: 50%;
+						margin-right: 18px;
+						&-active{
+							background-color: #001fff;
+						}
+					}
+					.add-quest-select-item-title{
+						font-size: 1.25rem;
+						color: #848484;
+					}
+				}
+			}
+			.add-quest-btns{
+				display: flex;
+				align-self: flex-end;
+				margin-top: 40px;
+				.cancel-btn{
+					width: 183px;
+					height: 65px;
+					border-radius: 33px;
+					background-color: #ffffff;
+					font-family: "HelveticaRoundedLT-Bold";
+					color: #001fff;
+					font-size: 1.5rem;
+					border: none;
+					outline: none;
+					margin-right: 45px;
+					cursor: pointer;
+				}
+				.add-btn{
+					cursor: pointer;
+					width: 372px;
+					height: 65px;
+					border-radius: 33px;
+					background-color: #001fff;
+					font-family: "HelveticaRoundedLT-Bold";
+					font-size: 1.5rem;
+					color: #ffffff;
+					border: none;
+					outline: none;
+				}
+			}
+		}
+
+	}
+}

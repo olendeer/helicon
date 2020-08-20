@@ -1,0 +1,156 @@
+@media screen and (max-width: 1600px){
+	.work-describe-wrapper{
+		.work-describe-content{
+			width: 800px;
+			border-radius: 15px;
+			padding: 15px 20px;
+			.close-describe{
+				top: 0px;
+				right: -20px;
+				font-size: 1rem;
+			}
+			.work-describe-content-body{
+				padding-right: 10px;
+				.work-describe-content-body-header{
+					font-size: 0.8rem;
+					margin-bottom: 15px;
+				}
+				.work-describe-content-body-description{
+					margin-bottom: 10px;
+					font-size: 0.7rem;
+					line-height: 0.85rem;
+				}
+				.work-describe-org{
+					padding: 8px 0px;
+					margin-bottom: 10px;
+					.work-describe-org-item{
+						font-size: 0.7rem;
+						margin-right: 10px;
+					}
+				}
+				.work-describe-project-type{
+					font-size: 0.7rem;
+					margin-bottom: 8px;
+				}
+				.work-describe-project-questions{
+					padding-bottom: 6px;
+					margin-bottom: 6px;
+					.work-describe-project-questions-header{
+						font-size: 0.6rem;
+						margin-bottom: 10px;
+					}
+					.work-describe-project-questions-list{
+						padding-left: 10px;
+						.work-describe-project-questions-list-item{
+							font-size: 0.55rem;
+							&:not(:last-child){
+								margin-bottom: 6px;
+							}
+						}
+					}
+				}
+				.work-describe-skills{
+					padding-bottom: 6px;
+					.work-describe-skills-header{
+						font-size: 0.7rem;
+						margin-bottom: 6px;
+					}
+					.work-describe-skills-list{
+						.work-describe-skills-list-item{
+							padding: 3px 8px;
+							font-size: 0.6rem;
+							&:not(:last-child){
+								margin-right: 10px;
+							}
+						}
+					}
+				}
+				.work-describe-proposals{
+					font-size: 0.6rem;
+					padding: 8px 0px;
+					.work-describe-proposal-item{
+						margin-right: 10px;
+						svg{
+							margin-left: 6px;
+						}
+					}
+				}
+				.work-describe-recent{
+					.work-describe-recent-header{
+						font-size: 1rem;
+						margin-top: 10px;
+						margin-bottom: 10px;
+					}
+					.work-describe-recent-list{
+						.work-describe-recent-list-item{
+							.recent-info{
+								.recent-name{
+									padding-left: 10px;
+									font-size: 0.7rem;
+									margin-bottom: 8px;
+								}
+								.recent-rating{
+									font-size: 0.7rem;
+									margin-bottom: 10px;
+									.recent-rating-stars{
+										margin-right: 7px;
+									}
+								}
+								.recent-artist{
+									font-size: 0.7rem;
+									.recent-artist-title{
+										margin-right: 10px;
+									}
+								}
+							}
+							.recent-info-org{
+								font-size: 0.65rem;
+							}
+						}
+					}
+				}
+			}
+			.work-describe-content-nav{
+				min-width: 220px;
+				padding-left: 10px;
+				.submit-proposal-btn{
+					width: 100%;
+					height: 45px;
+					border-radius: 46px;
+					font-size: 0.65rem;
+					color: #001fff;
+					margin-bottom: 10px;
+				}
+				.save-job-btn{
+					height: 45px;
+					font-size: 0.65rem;
+					margin-bottom: 15px;
+				}
+				.work-describe-about-client{
+					.work-describe-about-client-header{
+						font-size: 0.9rem;
+						margin-top: 0px;
+						margin-bottom: 10px;
+					}
+					.work-describe-about-client-payments{
+						font-size: 0.70rem;
+						svg{
+							margin-left: 8px;
+						}
+					}
+					.work-describe-about-client-rating{
+						font-size: 0.65rem;
+						margin-bottom: 15px;
+						.work-describe-about-client-rating-title{
+							margin-left: 8px;
+						}
+					}
+					.work-describe-about-client-chars{
+						font-size: 0.65rem;
+						margin-bottom: 8px;
+					}
+				}
+			}
+		}
+	}	
+}

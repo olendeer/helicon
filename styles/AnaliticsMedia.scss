@@ -1,0 +1,76 @@
+@media screen and (max-width:1600px){
+	.analitics-content-wrapper-header{
+		.withdraw{
+			margin-bottom: 10px;
+			.withdraw-price{
+				font-size: 0.7rem;
+				margin-right: 10px;
+			}
+			.withdraw-label{
+				font-size: 0.65rem;
+			}
+		}
+	}
+	.analitics-content{
+		.analitics-chart{
+			padding: 20px 20px 35px 20px;
+			border-radius: 15px;
+			.chart-data{
+				margin-left: 150x;
+				.chart-data-item{
+					padding-bottom: 8px;
+					width: 220px;
+					&:not(:last-child){
+						margin-bottom: 15px;
+					}
+					.chart-data-item-name{
+						font-size: 0.8rem;
+						margin-bottom: 7px;
+					}
+					.chart-data-item-value{
+						font-size: 1rem;
+					}
+					.chart-data-item-arrow{
+						right: -5px;
+						bottom: 5px;
+						svg{
+							font-size: 1.1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.analitics-up{
+		margin-left: 20px;
+	}
+	.analitics-up-header{
+		font-size: 0.7rem;
+		margin-bottom: 10px;
+	}
+	.analitics-up-item{
+		padding-bottom: 15px;
+		&:not(:last-child){
+			margin-bottom: 10px;
+		}
+		.analitics-up-item-header{
+			font-size: 0.75rem;
+		}
+		.analitics-up-variables{
+			margin-bottom: 12px;
+			.analitics-up-variables-btns{
+				width: 100px;
+				height: 30px;
+				font-size: 0.7rem;
+				&:first-child{
+					margin-right: 8px;
+				}
+			}
+		}
+		.analitics-up-start{
+			width: 100px;
+			height: 30px;
+			font-size: 0.6rem;
+		}
+	}
+}

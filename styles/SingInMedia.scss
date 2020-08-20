@@ -1,0 +1,94 @@
+@media screen and (max-width: 1600px){
+	.sing-in-wrapper{
+		.sing-in-content{
+			width: 380px;
+			height: 470px;
+			border-radius: 15px;
+			padding: 0px 10px;
+			padding-top: 20px;
+			.sing-in-content-header{
+				padding: 0px 15px;
+				margin-bottom: 15px;
+				.sing-in-btn{
+					font-size: 0.8rem;
+					margin-bottom: 7px;
+				}
+				.sing-in-active-line{
+					bottom: 0;
+					left: 0px;
+					position: absolute;
+					width: 100px;
+					&-registration{
+						left: 220px;
+						width: 140px;
+					}
+				}
+			}
+			.sing-in-inputs{
+				.sing-in-input{
+					height: 40px;
+					border-radius: 10px;
+					padding-left: 14px;
+					margin-bottom: 10px;
+					font-size: 0.6rem;
+				}
+				.sing-check-box-wrap{
+					margin-bottom: 20px;
+					.sing-in-checkbox{
+						.checkbox{
+							width: 16px;
+							height: 16px;
+							border-radius: 2px;
+							margin-right: 10px;
+							&-active{
+								&:after{
+									left: -1px;
+									top: 3.5px;
+									width: 12px;
+									height: 4px;
+									transform: rotateZ(-45deg) translateX(1px) translateY(1px);
+									border-bottom: 3px solid #001fff;
+									border-left: 3px solid #001fff;
+	
+								}
+							}
+						}
+						.checkbox-title{
+							font-size: 0.55rem;
+						}
+					}
+					.forgot{
+						color: #848484;
+						font-size: 0.55rem;
+					}
+				}
+			}
+			.sing-in-send-btn{
+				font-size: 0.7rem;
+				height: 44px;
+				border-radius: 10px;
+				margin-bottom: 20px;
+			}
+			.or{
+				font-size: 0.6rem;
+				margin-bottom: 15px;
+			}
+			.continue-social-btn{
+				height: 44px;
+				border-radius: 10px;
+				font-size: 0.7rem;
+				svg{
+					font-size: 0.9rem;
+					margin-right: 4px;
+				}
+	
+			}
+			.facebook-login{
+				margin-top: 10px;
+				svg{
+					color: #3b5998;
+				}
+			}
+		}
+	}
+}

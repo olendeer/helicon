@@ -1,0 +1,64 @@
+
+.verify-content{
+	display: flex;
+	padding: 85px;
+	box-sizing: border-box;
+	height: 845px;
+	width: 100%;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	background-color: #ffffff;
+	margin-top: 50px;
+	.verify-content-info{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		.verify-content-info-header{
+			color: #404040;
+			font-size: 2rem;
+			margin-bottom: 65px;
+		}
+		.verify-content-info-text{
+			color: #848484;
+			font-size: 1.5rem;
+			margin-bottom: 70px;
+			span{
+				color: #404040;
+			}
+		}
+		.check-email{
+			display: flex;
+			margin-bottom: 65px;
+			align-items: center;
+			.checkbox-email{
+				background-color: #001fff;
+				width: 27px;
+				height: 27px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 20px;
+				svg{
+					color: #ffffff;
+					width: 60%;
+				}
+			}
+			.check-email-label{
+				color: #001fff;
+				font-size: 1.25rem;
+			}
+		}
+		.resend-email{
+			width: 215px;
+			height: 65px;
+			border-radius: 33px;
+			background-color: #001fff;
+			border: none;
+			outline: none;
+			color: #fafbfc;
+			font-size: 1.25rem;
+			font-family: 'HelveticaRoundedLT-Bold';
+		}
+	}
+}

@@ -1,0 +1,219 @@
+.small-column{
+	width: 375px;
+	min-width: 375px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	.user-data{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+		.user-data-block{
+			display: flex;
+			align-items: center;
+			margin-bottom: 50px;
+			.user-info{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-right: 25px;
+				.user-avatar{
+					max-width: 135px;
+					max-height: 135px;
+					margin-bottom: 10px;
+					border-radius: 50%;
+				}
+				.user-name{
+					color: #404040;
+					font-size: 1rem;
+				}
+			}
+			.user-btns{
+				display: flex;
+				flex-direction: column;
+				.user-message-btn{
+					margin-bottom: 20px;
+				}
+				.user-btn{
+					width: 214px;
+					height: 45px;
+					border-radius: 23px;
+					box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+					background-color: #ffffff;
+					border: none;
+					outline: none;
+					cursor: pointer;
+					font-family: "HelveticaRoundedLT-Bold";
+					color: #001fff;
+					font-size: 1rem;
+				}
+			}
+		}
+		.user-status{
+			color: #848484;
+			font-size: 1rem;
+		}
+	}
+	.small-column-item{
+		display: flex;
+		flex-direction: column;
+		&:not(:last-child){
+			margin-bottom: 35px;
+		}
+		.small-column-item-content{
+			width: 100%;
+			height: 438px;
+			border-radius: 30px;
+			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+			background-color: #ffffff;
+			box-sizing: border-box;
+		}
+		.small-column-item-content-my-articles{
+			display: flex;
+			flex-direction: column;
+			padding: 25px 18px 65px 18px;
+			.my-article-item{
+				display: flex;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+				align-items: center;
+				&:not(:last-child){
+					border-bottom: 1px solid #cccccc;
+				}
+				.my-article-item-image{
+					height: 95px;
+					width: 95px;
+					border-radius: 10px;
+					margin-right: 10px;
+				}
+				.my-article-item-info{
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					height: 100%;
+					.my-article-item-header{
+						color: #404040;
+						font-size: 0.75rem;
+						margin: 0;
+					}
+					.my-article-item-text{
+						color: #848484;
+						font-size: 0.7rem;
+						margin: 0px;
+					}
+				}
+			}
+		}
+		.small-column-item-content-friends{
+			padding: 25px 18px 30px 18px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: space-between;
+			.friends-item{
+				display: flex;
+				flex-direction: column;
+				cursor: pointer;
+				.friends-item-image{
+					width: 95px;
+					height: 95px;
+					border-radius: 10px;
+					margin-bottom: 2px;
+				}
+				.friends-item-name{
+					color: #848484;
+					font-size: 0.7rem;
+				}
+			}
+		}
+		.small-column-item-content-news{
+			padding: 30px 20px;
+			.small-column-item-content-news-item{
+				display: flex;
+				height: 95px;
+				box-sizing: border-box;
+				padding-top: 12px;
+				padding-bottom: 15px;
+				cursor: pointer;
+				&:not(:last-child){
+					border-bottom: 1px solid #848484;
+				}
+				.news-item-image{
+					width: 50px;
+					height: 50px;
+					margin-right: 10px;
+					border-radius: 10px;
+				}
+				.news-item-info{
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					justify-content: space-between;
+					.news-item-info-header{
+						color: #404040;
+						font-size: 0.9rem;
+					}
+					.news-item-info-date{
+						color: #848484;
+						font-size: 0.75rem;
+					}
+				}
+			}
+		}
+		.small-column-item-more{
+			cursor: pointer;
+			width: 138px;
+			height: 30px;
+			border-radius: 18px;
+			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+			background-color: #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #001fff;
+			font-size: 0.75rem;
+			align-self: center;
+			margin-top: 20px;
+		}
+	}
+}
+.big-column{
+	width: 100%;
+	.big-column-item{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 35px;
+		.feed-line{
+			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+			display: flex;
+			flex-direction: column;
+			background-color: #fff;
+			border-radius: 20px;
+		}
+		.big-column-item-more{
+			cursor: pointer;
+			width: 138px;
+			height: 30px;
+			border-radius: 18px;
+			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+			background-color: #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #001fff;
+			font-size: 0.75rem;
+			align-self: center;
+			margin-top: 20px;
+		}
+		.tape{
+			width: 100%;
+			margin-left: 0px;
+			margin-top: 0px;
+			.post{
+				.image-post{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

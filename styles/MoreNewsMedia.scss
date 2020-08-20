@@ -1,0 +1,56 @@
+@media screen and (max-width: 1600px){
+	.my-articles-content{
+		margin-top: 20px;
+		border-radius: 15px;
+		padding: 30px 20px 30px 25px;
+		.add-article{
+			width: 40px;
+			height: 40px;
+			svg{
+				color: #001fff;
+				font-size: 1rem;
+			}
+		}
+		.my-article-content-item{
+			&:not(:last-child){
+				margin-bottom: 20px;
+			}
+			.my-article-content-item-image{
+				width: 170px;
+				height: 110px;
+				margin-right: 20px;
+			}
+			.my-article-content-item-info{
+				.my-article-content-item-header{
+					font-size: 0.7rem;
+					margin-bottom: 5px;
+				}
+				.my-article-content-item-text{
+					font-size: 0.5rem;
+				}
+			}
+			.my-article-estimation{
+				margin-left: 130px;
+				.likes{
+					span{
+						font-size: 0.6rem;
+					}
+					svg{
+						height: 15px;
+						margin-left: 6px;
+					}
+				}
+				.views{
+					margin-left: 13px;
+					span{
+						font-size: 0.6rem;
+					}
+					svg{
+						height: 15px;
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}

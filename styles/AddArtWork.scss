@@ -1,0 +1,140 @@
+.add-artwork-content-wrapper{
+	width: 100%;
+}
+.add-artwork-content{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	#add-artwork{
+		display: none;
+	}
+	.art-work-header{
+		color: #848484;
+		font-size: 1rem;
+		margin-bottom: 15px;
+	}
+	.art-work-select-wrap{
+		display: flex;
+	}
+	.art-work-select{
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 402px;
+		height: 49px;
+		border-radius: 27px;
+		background-color: #ffffff;
+		margin-right: 90px;
+		margin-bottom: 35px;
+		.art-work-select-active{
+			cursor: pointer;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			box-sizing: border-box;
+			padding-left: 20px;
+			padding-right: 20px;
+			justify-content: space-between;
+			color: #848484;
+			font-size: 0.8rem;
+		}
+	}
+	.artwork-information{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		.artwork-filters{
+			display: flex;
+			justify-content: space-between;
+			align-content: space-between;
+			flex-wrap: wrap;
+			height: 140px;
+			margin-bottom: 40px;
+		}
+		.artwork-org{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 50px;
+			.add-artwork-input{
+				width: 45%;
+				height: 50px;
+				border-radius: 27px;
+				background-color: #ffffff;
+				border: #ffffff;
+				outline: none;
+				font-family: "HelveticaRoundedLT-Bold";
+				font-size: 0.8rem;
+				padding: 0px 20px;
+			}
+		}
+		.artwork-description{
+			width: 100%;
+			height: 180px;
+			border-radius: 20px;
+			background-color: #ffffff;
+			resize: none;
+			border: none;
+			outline: none;
+			margin-bottom: 65px;
+			font-family: "HelveticaRoundedLT-Bold";
+			font-size: 0.8rem;
+			padding: 15px 20px;
+			color: #848484;
+			box-sizing: border-box;
+		}
+		.artwork-btns{
+			align-self: flex-end;
+			.artwork-cancel-btn{
+				border: none;
+				outline: none;
+				background: transparent;
+				font-family: "HelveticaRoundedLT-Bold";
+				color: #001fff;
+				font-size: 0.9rem;
+				margin-right: 70px;
+				cursor: pointer;
+			}
+			.artwork-save-btn{
+				width: 187px;
+				height: 58px;
+				border-radius: 31px;
+				box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+				background-color: #001fff;
+				border: none;
+				outline: none;
+				font-family: "HelveticaRoundedLT-Bold";
+				font-size: 0.9rem;
+				cursor: pointer;
+				color: #ffffff;
+			}
+		}
+	}
+	.add-artwork-image{
+		margin-left: 80px;
+		width: 398px;
+		min-width: 398px;
+		height: 462px;
+		border-radius: 22px;
+		box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+		background-color: #ffffff;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.image-circle{
+			width: 90px;
+			height: 90px;
+			background-color: #001fff;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			svg{
+				font-size: 2.2rem;
+				color: #ffffff;
+			}
+		}
+	}
+}

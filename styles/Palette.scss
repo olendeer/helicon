@@ -1,0 +1,85 @@
+.palette{
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 430px;
+	height: 415px;
+	align-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.IroSlider{
+	transform: translateX(230px) translateY(-380px);
+}
+.IroColorPicker{
+	height: 515px;
+}
+.palette-navigation{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	.favorite-palette{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		.favorite-header{
+			font-size: 1rem;
+			color: #1d1d1d;
+			margin-bottom: 30px;
+		}
+		.favorite-colors{
+			width: 300px;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: row-reverse;
+			.color-item{
+				width: 60px;
+				min-width: 60px;
+				height: 100%;
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;
+				color: #fff;
+				font-family: 'SegoeUI-Italic';
+				font-size: 0.6rem;
+				cursor: pointer;
+				margin-right: 5px;
+				border-radius: 5px;
+			}
+		}
+	}
+	.save-data{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.current-color-box{
+			width: 190px;
+			height: 190px;
+			background: #000;
+			margin-bottom: 20px;
+			border-radius: 10px;
+		}
+		.current-color{
+			color: #8a1944;
+			text-transform: uppercase;
+			font-size: 1.5rem;
+			margin-bottom: 20px;
+		}
+		.save-color{
+			width: 190px;
+			height: 56px;
+			border-radius: 17px;
+			background-color: #001fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffffff;
+			font-size: 1.25rem;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+@media screen and (max-width: 1600px){
+	.current-article{
+		margin-top: 30px;
+		margin-bottom: 40px;
+		.current-article-image{
+			margin-right: 30px;
+		}
+		.current-article-data{
+			.current-article-header{
+				margin-bottom: 15px;
+				.current-article-header-data{
+					.current-article-name{
+						font-size: 0.9rem;
+						line-height: 1.4rem;
+					}
+					.current-article-owner{
+						font-size: 0.55rem;
+					}
+				}
+				.current-article-estimations{
+					margin-top: 5px;
+					.likes{
+						font-size: 0.6rem;
+						margin-right: 6px;
+					}
+					.views{
+						font-size: 0.6rem;
+					}
+					div{
+						svg{
+							margin-left: 7px;
+						}
+					}
+				}
+			}
+			.current-article-text{
+				color: #404040;
+				font-size: 0.6rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,121 @@
+.auction-content{
+	width: 100%;
+	.auction-headers{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.auction-header-wrap{
+			display: flex;
+			align-items: flex-start;
+			align-items: center;
+			.header-news-add-artwork{
+				cursor: pointer;
+				width: 200px;
+				height: 40px;
+				border: none;
+				outline: none;
+				font-family: 'HelveticaRoundedLT-Bold';
+				font-size: 1rem;
+				background-color: #fff;
+				border-radius: 40px;
+				box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+				margin-right: 10px;
+			}
+		}
+	}
+}
+.auctions-list{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	.auction-item{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+		&:not(:last-child){
+			margin-bottom: 85px;
+		}
+		.auction-item-info{
+			display: flex;
+			.auction-wrapper-image{
+				margin-right: 35px;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				.auction-image{
+					height: 100%;
+					max-height: 225px;
+				}
+				.auction-label{
+					font-family: 'SegoeUI';
+					font-size: 0.75rem;
+					color: #1c1c1c;
+				}
+			}
+			.auction-item-description{
+				margin-top: 15px;
+				.auction-name{
+					margin-bottom: 8px;
+					color: #404040;
+					font-size: 1.9rem;
+				}
+				.auction-astimations{
+					display: flex;
+					align-items: center;
+					margin-bottom: 40px;
+					color: #1c1c1c;
+					font-size: 0.9rem;
+					svg{
+						color: #707070;
+						margin-left: 5px;
+					}
+					.likes{
+						margin-right: 25px;
+						display: flex;
+						align-items: center;
+					}
+				}
+				.auction-post{
+					margin-bottom: 15px;
+					color: #707070;
+					font-size: 0.7rem;
+				}
+				.watch{
+					display: flex;
+					align-items: center;
+					font-family: 'SegoeUI';
+					span{
+						color: #707070;
+						font-size: 0.7rem;
+						font-family: 'HelveticaRoundedLT-Bold';
+					}
+					svg{
+						margin-left: 2px;
+						margin-right: 2px;
+						color: #bb0000;
+						font-size: 0.7rem;
+					}
+					font-size: 0.6rem;
+				}
+			}
+		}
+		.auction-item-price{
+			font-family: 'SegoeUI';
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			.current-price{
+				color: #1c1c1c;
+				font-size: 2.65rem;
+				font-weight: bold;
+			}
+			.plus-price{
+				color: #707070;
+				font-size: 0.95rem;
+				margin-right: 5px;
+			}
+		}
+	}
+}

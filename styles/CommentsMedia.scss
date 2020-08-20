@@ -1,0 +1,13 @@
+@media screen and (max-width: 1600px){
+	.post-comments{
+		padding-left: 30px;
+		.comment-more{
+			position: absolute;
+			bottom: -14px;
+			left: calc(50% - 60px);
+			width: 100px;
+			height: 25px;
+			font-size: 0.5rem;
+		}
+	}
+}

@@ -1,0 +1,90 @@
+.work-jobs-list-item{
+	width: 100%;
+	border-radius: 15px;
+	background-color: #f6f6f6;
+	box-sizing: border-box;
+	padding: 30px 200px 20px 30px;
+	position: relative;
+	&:not(:last-child){
+		margin-bottom: 20px;
+	}
+	.work-jobs-list-item-name{
+		font-size: 1rem;
+		margin-bottom: 20px;
+	}
+	.work-jobs-list-item-description{
+		color: #363636;
+		font-size: 0.6rem;
+		margin-bottom: 13px;
+		line-height: 0.9rem;
+	}
+	.work-jobs-list-item-information{
+		margin-bottom: 20px;
+		.work-jobs-list-item-information-proposals{
+			font-size: 0.7rem;
+			margin-right: 35px;
+			span{
+				color: #001fff;
+			}
+		}
+		.work-jobs-list-item-information-payments{
+			color: #363636;
+			font-size: 0.7rem;
+			margin-right: 20px;
+			display: flex;
+			align-items: center;
+			svg{
+				font-size: 1rem;
+				margin-left: 6px;
+			}
+		}
+		.work-jobs-list-item-information-location{
+			font-size: 0.7rem;
+			svg{
+				margin-left: 6px;
+				font-size: 1rem;
+			}
+		}
+	}
+	.work-jobs-list-item-labels{
+		margin-bottom: 20px;
+		.work-jobs-list-item-labels-item{
+			height: 30px;
+			padding: 0px 6px;
+			font-size: 0.8rem;
+			&:not(:last-child){
+				margin-right: 10px;
+			}
+		}
+	}
+	.work-jobs-list-item-price{
+		font-size: 1.3rem;
+		.work-jobs-list-item-price-value{
+			color: #001fff;
+			margin-left: 5px;
+		}
+	}
+	.work-jobs-list-item-elected{
+		top: 20px;
+		right: 25px;
+		width: 46px;
+		height: 46px;
+		cursor: pointer;
+		svg{
+			font-size: 1rem;
+		}
+	}
+	.work-jobs-list-item-btns{
+		top: 20px;
+		right: 25px;
+		.work-jobs-list-item-btn{
+			width: 140px;
+			height: 38px;
+			border-radius: 33px;
+			font-size: 0.7rem;
+			&:not(:last-child){
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

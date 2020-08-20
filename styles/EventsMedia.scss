@@ -1,0 +1,99 @@
+@media screen and (max-width: 1600px){
+	.events-body{
+		margin-top: 20px;
+		border-radius: 15px;
+	}
+	.look-events{
+		padding: 20px 20px 15px 20px;
+		.look-events-header{
+			padding-bottom: 15px;
+			.look-events-header-title{
+				font-size: 0.7rem;
+				margin-bottom: 10px;
+			}
+			.look-event-header-filters{
+				.look-event-header-filters-item{
+					height: 30px;
+					padding: 0px 14px;
+					font-size: 0.6rem;
+					cursor: pointer;
+					&:not(:last-child){
+						margin-right: 7px;
+					}
+				}
+			}
+		}
+	}
+	.look-events-list-header{
+		font-size: 0.7rem;
+		margin-top: 10px;
+		margin-bottom: 12px;
+	}
+	.look-events-list{
+		.look-events-list-item{
+			width: 31%;
+			margin-bottom: 25px;
+			cursor: pointer;
+			.events-list-item-image{
+				width: 100%;
+				height: auto;
+				margin-bottom: 8px;
+			}
+			.events-list-item-date{
+				font-size: 0.7rem;
+				margin-bottom: 5px;
+			}
+			.events-list-item-data{
+				margin-bottom: 5px;
+				.events-list-item-name{
+					font-size: 0.8rem;
+				}
+				svg{
+					font-size: 1.1rem;
+					margin-right: 6px;
+				}
+			}
+			.events-list-item-location{
+				font-size: 0.6rem;
+			}
+		}
+	}
+	.create-events{
+		min-width: 300px;
+		padding: 35px 20px 0px 20px;
+		.create-events-header{
+			padding-bottom: 20px;
+			.create-event-btn{
+				width: 280px;
+				height: 36px;
+				border-radius: 25px;
+				font-size: 0.7rem;
+			}
+		}
+		.coming-events{
+			.coming-events-header{
+				font-size: 0.7rem;
+				margin-top: 7px;
+				margin-bottom: 16px;
+			}
+			.coming-events-list{
+				.coming-events-item{
+					cursor: pointer;
+					.coming-events-item-image{
+						width: 85px;
+						height: auto;
+						margin-right: 6px;
+					}
+					.coming-events-item-info{
+						.coming-events-item-date{
+							font-size: 0.65rem;
+						}
+						.coming-events-item-description{
+							font-size: 0.65rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

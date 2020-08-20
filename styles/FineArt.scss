@@ -1,0 +1,111 @@
+.filters{
+	width: 100%;
+	height: 130px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	margin-bottom: 50px;
+	.filter-item{
+		margin-right: 50px;
+	}
+	.clear-filter{
+		width: 260px;
+		height: 50px;
+		box-sizing: border-box;
+		padding-left: 25px;
+		padding-right: 20px;
+		border-radius: 50px;
+		background-color: #fff;
+		cursor: pointer;
+		position: relative;
+		border: none;
+		outline: none;
+		color: #363636;
+		font-size: 0.8rem;
+		font-family: "HelveticaRoundedLT-Bold";
+	}
+}
+.art-motiovation{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: #001fff;
+	font-size: 1.2rem;
+}
+
+.progress{
+	margin-left: 10px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(#404040, .3);
+	margin-bottom: 35px;
+	.progress-header{
+		margin-bottom: 25px;
+		color: #404040;
+		text-transform: uppercase;
+		font-size: 1.25rem;
+	}
+	.progress-items{
+		display: flex;
+		.progress-item{
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: center;
+			cursor: pointer;
+			&:not(:last-child){
+				margin-right: 85px;
+			}
+			.progress-circle{
+				width: 72px;
+				height: 72px;
+				background-color: #707070;
+				border-radius: 50%;
+			}
+			.progress-name{
+				font-family: 'SegoeUI-Italic';
+				font-size: 0.6rem;
+			}
+		}
+		.progress-add{
+			display: flex;
+			.progress-circle{
+				box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+				background-color: #fafbfc;
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 2px;
+				&:after{
+					content: '';
+					position: absolute;
+					width: 40%;
+					height: 3px;
+					border-radius: 2px;
+					background-color: #001fff;
+				}
+				&:before{
+					content: '';
+					position: absolute;
+					width: 40%;
+					height: 3px;
+					border-radius: 2px;
+					transform: rotateZ(90deg);
+					background-color: #001fff;
+				}
+			}
+		}
+	}
+}
+.arts{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	img{
+		cursor: pointer;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 1600px){
+	.comment-item{
+		margin-bottom: 20px;
+		.comment-avatar{
+			max-width: 34px;
+			max-height: 34px;
+			margin-right: 6px;
+		}
+		.comment-data{
+			.comment-name{
+				margin-bottom: 10px;
+				font-size: 0.7rem;
+			}
+			.comment-text{
+				font-size: 0.5rem;
+				max-width: 440px;
+				margin-bottom: 10px;
+			}
+			.comment-estimations{
+				.comment-reply{
+					font-size: 0.6rem;
+					margin-right: 15px;
+					svg{
+						width: 15px;
+					}
+				}
+				.comment-likes{
+					font-size: 0.6rem;
+					svg{
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+}

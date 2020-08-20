@@ -1,0 +1,71 @@
+@media screen and (max-width: 1600px){
+	.auction-content{
+		.auction-headers{
+			.auction-header-wrap{
+				.header-news-add-artwork{
+					width: 140px;
+					height: 34px;
+					font-size: 0.7rem;
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+	.auctions-list{
+		.auction-item{
+			&:not(:last-child){
+				margin-bottom: 30px;
+			}
+			.auction-item-info{
+				.auction-wrapper-image{
+					margin-right: 15px;
+					.auction-image{
+						max-height: 180px;
+						border-radius: 10px;
+					}
+					.auction-label{
+						font-size: 0.55rem;
+					}
+				}
+				.auction-item-description{
+					margin-top: 8px;
+					.auction-name{
+						margin-bottom: 6px;
+						font-size: 1.2rem;
+					}
+					.auction-astimations{
+						margin-bottom: 20px;
+						font-size: 0.6rem;
+						svg{
+							margin-left: 5px;
+						}
+						.likes{
+							margin-right: 7px;
+						}
+					}
+					.auction-post{
+						margin-bottom: 2px;
+						font-size: 0.6rem;
+					}
+					.watch{
+						span{
+							font-size: 0.55rem;
+						}
+						svg{
+							font-size: 0.6rem;
+						}
+						font-size: 0.55rem;
+					}
+				}
+			}
+			.auction-item-price{
+				.current-price{
+					font-size: 2rem;
+				}
+				.plus-price{
+					font-size: 0.65rem;
+				}
+			}
+		}
+	}
+}

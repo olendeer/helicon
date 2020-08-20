@@ -1,0 +1,27 @@
+@media screen and (max-width: 1600px){
+	.add-basket-wrapper{
+		.add-basket-content{
+			border-radius: 15px;
+			background-color: #ffffff;
+			width: 400px;
+			height: 450px;
+			padding-top: 25px;
+			.add-basket-content-header{
+				font-size: 0.9rem;
+			}
+			.add-basket-img{
+				width: 200px;
+			}
+			.add-basket-continue-btn{
+				width: 250px;
+				height: 50px;
+				font-size: 1rem;
+				margin-top: 10px;
+				margin-bottom: 15px;
+			}
+			.add-basket-buy-btn{
+				font-size: 1rem;
+			}
+		}
+	}
+}

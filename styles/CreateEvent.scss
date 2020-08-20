@@ -1,0 +1,280 @@
+.create-event-wrapper{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: -70px;
+	left: -108px;
+	z-index: 15;
+	background-color: transparent;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	.create-event-content{
+		width: 1100px;
+		height: auto;
+		padding: 40px 80px;
+		background-color: #fff;
+		border-radius: 45px;
+		box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+		background-color: #ffffff;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		.create-event-content-header{
+			color: #1d1d1d;
+			font-size: 1.5rem;
+			margin-bottom: 5px;
+		}
+		.create-event-content-title{
+			color: #707070;
+			font-size: 1rem;
+			margin-bottom: 20px;
+		}
+		.necessary-content{
+			display: flex;
+			flex-direction: column;
+			padding-left: 40px;
+			padding-bottom: 35px;
+			border-bottom: 1px solid #cccccc;
+			margin-bottom: 45px;
+			.wrapper-title{
+				color: #707070;
+				font-size: 1rem;
+				margin-right: 30px;
+				width: 280px;
+				display: flex;
+				justify-content: flex-end;
+			}
+			.necessary-wrapper-media{
+				display: flex;
+				align-items: flex-start;
+				box-sizing: border-box;
+				margin-bottom: 30px;
+				.necessary-upload{
+					width: 483px;
+					height: 290px;
+					border-radius: 11px;
+					background-color: #404040;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					.necessary-upload-body{
+						width: 215px;
+						height: 71px;
+						border-radius: 13px;
+						background-color: #ffffff;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: #001fff;
+						font-size: 0.75rem;
+						svg{
+							font-size: 1.2rem;
+							margin-right: 12px;
+						}
+					}
+				}
+			}
+			.necessary-wrapper-input{
+				display: flex;
+				align-items: center;
+				margin-bottom: 20px;
+				.wrapper-input{
+					width: 483px;
+					height: 39px;
+					border-radius: 6px;
+					background-color: #f6f6f9;
+					box-sizing: border-box;
+					padding-left: 10px;
+					border: none;
+					outline: none;
+					font-family: "HelveticaRoundedLT-Bold";
+				}
+				.wrapper-textarea{
+					width: 483px;
+					height: 80px;
+					border-radius: 6px;
+					background-color: #f6f6f9;
+					box-sizing: border-box;
+					resize: none;
+					padding-left: 10px;
+					padding-top: 5px;
+					border: none;
+					outline: none;
+					font-family: "HelveticaRoundedLT-Bold";
+				}
+				.necessary-date{
+					display: flex;
+					flex-direction: column;
+					.necessary-date-line{
+						display: flex;
+						align-items: center;
+						justify-content: flex-end;
+						margin-bottom: 15px;
+						.necessary-date-line-title{
+							color: #707070;
+							font-size: 1rem;
+							margin-right: 15px;
+						}
+						.necessary-date-line-day{
+							color: #404040;
+							font-size: 0.8rem;
+							width: 150px;
+							height: 40px;
+							border-radius: 6px;
+							background-color: #f6f6f9;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							svg{
+								margin-left: 7px;
+							}
+						}
+						.necessary-date-line-time{
+							border-radius: 6px;
+							background-color: #f6f6f9;
+							color: #404040;
+							font-size: 0.8rem;
+							width: 90px;
+							height: 40px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							margin-left: 30px;
+							svg{
+								margin-left: 7px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.conditions{
+			border-bottom: 1px solid #cccccc;
+			margin-bottom: 20px;
+			.add-link-input-wrap{
+				margin-left: 50px;
+				display: flex;
+				align-items: center;
+				margin-bottom: 50px;
+				.add-link-input-title{
+					color: #707070;
+					font-size: 0.8rem;
+					margin-right: 30px;
+				}
+				.add-link-input{
+					width: 400px;
+					height: 28px;
+					border: none;
+					outline: none;
+					border-radius: 10px;
+					box-sizing: border-box;
+					padding: 0px 20px;
+					box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+					font-family: "HelveticaRoundedLT-Bold";
+				}
+			}
+		}
+		.add-link{
+			width: 100%;
+			height: 95px;
+			border-radius: 11px;
+			background-color: #f6f6f9;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			box-sizing: border-box;
+			padding-left: 40px;
+			padding-right: 30px;
+			margin-bottom: 50px;
+			.add-link-wrap{
+				display: flex;
+				align-items: center;
+				color: #707070;
+				font-size: 0.8rem;
+				svg{
+					margin-right: 30px;
+				}
+			}
+			.add-link-plus{
+				width: 84px;
+				height: 56px;
+				border-radius: 11px;
+				background-color: #e6e6e6;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				svg{
+					color: #707070;
+					font-size: 1.6rem;
+				}
+			}
+		}
+		.chars{
+			margin-bottom: 150px;
+		}
+		.checkbox-item{
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 20px;
+			.chekbox-item-title{
+				width: 200px;
+				display: flex;
+				justify-content: flex-end;
+				color: #707070;
+				font-size: 1rem;
+				text-align: end;
+				margin-right: 40px;
+			}
+			.chekbox-item-box{
+				display: flex;
+				align-items: center;
+				width: 600px;
+				margin-bottom: 15px;
+				cursor: pointer;
+				.checkbox-item-box-check{
+					min-width: 26px;
+					height: 25px;
+					border: solid 1px #707070;
+					background-color: #e6e6e6;
+					margin-right: 15px;
+				}
+				.checkbox-item-box-title{
+					color: #707070;
+					font-size: 0.8rem;
+				}
+			}
+		}
+		.create-event-btns{
+			align-self: flex-end;
+			margin-bottom: 100px;
+			.create-event-save-btn{
+				width: 203px;
+				height: 56px;
+				border-radius: 16px;
+				background-color: #e6e6e6;
+				font-family: 'SegoeUI';
+				font-size: 1.75rem;
+				color: #707070;
+				border: none;
+				outline: none;
+				margin-right: 25px;
+			}
+			.create-event-create-btn{
+				width: 190px;
+				height: 56px;
+				border: none;
+				outline: none;
+				font-family: 'SegoeUI';
+				color: #707070;
+				font-size: 1.75rem;
+				border-radius: 17px;
+				 background-color: #c92104;
+				color: #ffffff;
+			}
+		}
+	}
+}

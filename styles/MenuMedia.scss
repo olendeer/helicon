@@ -1,0 +1,35 @@
+@media screen and (max-width: 1600px){
+	.navigation{
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		width: 100px;
+		.nav-link{
+			padding: 12px;
+			width: 40px;
+			min-height: 40px;
+			height: 40px;
+			&:not(:last-child){
+				margin-bottom: 10px;
+			}
+			&:first-child{
+				margin-top: 20px;
+			}
+			svg{
+				width: 20px;
+				height: 20px;
+				transform: translateY(-2px);
+			}
+			span{
+				width: 7px;
+				height: 7px;
+				border-radius: 2px;
+				&:nth-child(odd){
+					margin-right: 1px;
+				}
+			}
+		}
+		.nav-link-active{
+			border-radius: 7px;
+		}
+	}
+}

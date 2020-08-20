@@ -1,0 +1,70 @@
+.basket-item{
+	width: 758px;
+	height: 243px;
+	border-radius: 30px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	background-color: #ffffff;
+	box-sizing: border-box;
+	padding: 35px 60px 35px 50px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	.art-data{
+		display: flex;
+		justify-content: flex-start;
+		.basket-item-art{
+			height: 100%;
+			margin-right: 40px;
+		}
+		.art-info{
+			display: flex;
+			flex-direction: column;
+			.art-name{
+				color: #404040;
+				font-size: 1.5rem;
+				margin-bottom: 5px;
+			}
+			.owner-info{
+				display: flex;
+				.art-owner-name{
+					color: #848484;
+					font-size: 1rem;
+					margin-right: 20px;
+				}
+				.art-owner-avatar{
+					max-width: 24px;
+					max-height: 24px;
+				}
+			}
+		}
+	}
+	.price-data{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		.art-price{
+			color: #001fff;
+			font-size: 2.5rem;
+			font-weight: 600;
+		}
+		.nameplate{
+			color: #848484;
+			font-size: 1rem;
+			&:last-child{
+				margin-top: 10px;
+			}
+		}
+	}
+	&:not(:last-child){
+		margin-bottom: 20px;
+	}
+	.art-delete{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 2rem;
+		transform: rotateZ(45deg);
+		color: #848484;
+		cursor: pointer;
+	}
+}

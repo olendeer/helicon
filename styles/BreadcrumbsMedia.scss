@@ -1,0 +1,12 @@
+@media screen and (max-width: 1600px){
+	.breadcrumbs{
+		font-size: 0.6rem;
+		top: 15px;
+		left: 18px;
+		svg{
+			width: 12px;
+			height: 15px;
+			transform: translateY(2px);
+		}
+	}
+}

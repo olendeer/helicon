@@ -1,0 +1,104 @@
+.messages-popup{
+	position: absolute;
+	width: 440px;
+	height: 760px;
+	border-radius: 36px;
+	box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+	background-color: #ffffff;
+	top: 65px;
+	left: -80%;
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	box-sizing: border-box;
+	padding: 15px 25px 25px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	transition-duration: .2s;
+	transform: translateY(10px) translateX(10px) rotateY(-15deg) rotateX(15deg);
+}
+.messages-popup-active{
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0px) translateX(0px) rotateY(0deg ) rotateX(0deg)
+}
+
+.messages-header{
+	color: #404040;
+	font-size: 1.25rem;
+	margin-bottom: 15px;
+}
+.messages-searchbar{
+	width: 300px;
+	height: 36px;
+	border-radius: 18px;
+	background-color: #f6f6f9;
+	padding-left: 20px;
+	padding-right: 25px;
+	box-sizing: border-box;
+	background-color: #f6f6f9;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	.messages-search-input{
+		width: 100%;
+		border: none;
+		outline: none;
+		height: 100%;
+		background-color: transparent;
+		font-family: 'HelveticaRoundedLT-Bold';
+	}
+	svg{
+		color:  #848484;
+	}
+}
+.messages-list{
+	display: flex;
+	flex-direction: column;
+	height: 495px;
+	.messages-list-item{
+		display: flex;
+		align-items: flex-end;
+		&:not(:last-child){
+			margin-bottom: 25px;
+		}
+		.message-owner-avatar{
+			width: 62px;
+			height: 62px;
+			margin-right: 15px;
+		}
+		.message-info{
+			display: flex;
+			flex-direction: column;
+			align-self: center;
+			.message-owner-name{
+				color: #404040;
+				font-size: 1rem;
+				margin-bottom: 2px;
+			}
+			.message-owner-text{
+				color: #848484;
+			}
+		}
+		.message-time{
+			color: #848484;
+			font-size: 0.75rem;
+			margin-bottom: 10px;
+		}
+	}
+}
+.messages-opened-full-btn{
+	width: 345px;
+	height: 65px;
+	border-radius: 33px;
+	background-color: #001fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	align-self: center;
+	margin-top: 60px;
+	cursor: pointer;
+}

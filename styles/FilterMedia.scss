@@ -1,0 +1,35 @@
+@media screen and (max-width: 1600px){
+	.filter-item{
+		width: 180px;
+		height: 35px;
+		padding-left: 20px;
+		padding-right: 15px;
+		.filter-name{
+			font-size: 0.5rem;
+		}
+		.arrow{
+			width: 15px;
+		}
+		.filter-item-list{
+			top: 40px;
+			left: 0px;
+			padding: 15px;
+			background-color: #fff;
+			transform: translateX(-15px);
+			border-radius: 15px;
+			.filter-item-check{
+				&:not(:last-child){
+					margin-bottom: 12px;
+				}
+				.checkbox{
+					margin-right: 12px;
+					width: 10px;
+					height: 10px;
+				}
+			}
+		}
+		.filter-item-list-active{
+			transform: translateX(0px);
+		}
+	}
+}

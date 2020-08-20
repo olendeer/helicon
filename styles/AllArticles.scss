@@ -1,0 +1,11 @@
+.all-articles{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	margin-top: 20px;
+	.article{
+		margin-bottom: 50px;
+	}
+}

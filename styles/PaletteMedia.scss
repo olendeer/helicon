@@ -1,0 +1,47 @@
+@media screen and (max-width: 1600px){
+	.palette{
+		margin-top: 2%;
+	}
+
+	.palette-navigation{
+		.favorite-palette{
+			.favorite-header{
+				font-size: 0.7rem;
+				margin-bottom: 10px;
+			}
+			.favorite-colors{
+				width: 240px;
+				height: 40px;
+				.color-item{
+					width: 40px;
+					min-width: 40px;
+					font-size: 0.5rem;
+					margin-right: 2px;
+					border-radius: 3px;
+				}
+			}
+		}
+		.save-data{
+			display: flex;
+			align-items: flex-end;
+			.current-color-box{
+				width: 100px;
+				height: 100px;
+				background-color: transparent;
+				margin-bottom: 10px;
+				border-radius: 8px;
+			}
+			.current-color{
+				color: transparent;
+				font-size: 1rem;
+				margin-bottom: 10px;
+			}
+			.save-color{
+				width: 100px;
+				height: 38px;
+				border-radius: 5px;
+				font-size: 0.8rem;
+			}
+		}
+	}
+}

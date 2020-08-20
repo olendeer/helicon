@@ -1,0 +1,67 @@
+@media screen and (max-width: 1600px){
+	.filters{
+		height: 90px;
+		margin-bottom: 40px;
+		.filter-item{
+			margin-right: 5%;
+		}
+		.clear-filter{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			width: 180px;
+			height: 35px;
+			padding-left: 20px;
+			padding-right: 15px;
+			font-size: 0.5rem;
+			margin-right: 5%;
+		}
+	}
+	.art-motiovation{
+		margin-top: 10px;
+		margin-bottom: 20px;
+		color: #001fff;
+		font-size: 0.7rem;
+	}
+	
+	.progress{
+		margin-left: 8px;
+		margin-bottom: 25px;
+		.progress-header{
+			margin-bottom: 20px;
+			font-size: 0.8rem;
+		}
+		.progress-items{
+			.progress-item{
+				&:not(:last-child){
+					margin-right: 30px;
+				}
+				.progress-circle{
+					width: 40px;
+					height: 40px;
+				}
+				.progress-name{
+					font-size: 0.5rem;
+				}
+			}
+			.progress-add{
+				.progress-circle{
+					&:after{
+						width: 30%;
+						height: 2px;
+					}
+					&:before{
+						width: 30%;
+						height: 2px;
+					}
+				}
+			}
+		}
+	}
+	.arts{
+		img{
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}

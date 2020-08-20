@@ -1,0 +1,42 @@
+.work-filters{
+	margin-bottom: 20px;
+	.work-filters-list{
+		.work-filter-list-item{
+			width: 200px;
+			height: 36px;
+			border-radius: 27px;
+			cursor: pointer;
+			&:not(:last-child){
+				margin-right: 20px;
+			}
+			.work-filter-list-item-selected{
+				padding: 0px 20px;
+				.selected-text{
+					.selected-text-name{
+						font-size: 0.6rem;
+						margin-bottom: 2px;
+					}
+					.selected-text-value{
+						color: #363636;
+						font-size: 0.4rem;
+					}
+				}
+				svg{
+					font-size: 1.3rem;
+					margin-right: -15px;
+				}
+			}
+		}
+	}
+	.work-filter-clear{
+		width: 180px;
+		height: 36px;
+		font-size: 0.6rem;
+		cursor: pointer;
+	}
+}
+.work-load-more{
+	height: 36px;
+	font-size: 0.7rem;
+	cursor: pointer;
+}

@@ -1,0 +1,29 @@
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 65px;
+	width: 100%;
+	height: 60px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0px 15px;
+	z-index: 5;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(20px);
+	transition-duration: .3s;
+	.footer-link{
+		font-size: 1rem;
+		color: #707070;
+		text-decoration: none;
+		margin-right: 85px;
+	}
+	&.footer-active{
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0px);
+	}
+}

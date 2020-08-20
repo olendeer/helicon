@@ -1,0 +1,59 @@
+@media screen and (max-width: 1600px){
+	.friends-content{
+		border-radius: 15px;
+		padding: 15px 20px 50px 20px;
+		margin-top: 20px;
+		.friends-content-header{
+			.friends-content-search-bar{
+				width: 280px;
+				height: 30px;
+				margin-right: 25px;
+				padding-left: 14px;
+				padding-right: 10px;
+				svg{
+					font-size: 0.9rem;
+				}
+			}
+			.followers-btn{
+				font-size: 0.65rem;
+				cursor: pointer;
+			}
+		}
+		.friends-list{
+			margin-top: 20px;
+			justify-content: flex-start;
+			.friend-item{
+				margin-bottom: 20px;
+				margin-right: 20px;
+				.friend-item-data{
+					margin-right: 120px;
+					.friend-item-image{
+						margin-right: 12px;
+						max-width: 60px;
+						max-height: 60px;
+					}
+					.friend-item-info{
+						.friend-item-name{
+							font-size: 0.8rem;
+							margin-bottom: 10px;
+						}
+						.friend-item-send-message{
+							cursor: pointer;
+							font-size: 0.8rem;
+							svg{
+								font-size: 1rem;
+								margin-right: 4px;
+							}
+						}
+					}
+				}
+				.friend-item-status{
+					width: 100px;
+					height: 34px;
+					font-size: 0.7rem;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+}

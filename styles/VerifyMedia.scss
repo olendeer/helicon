@@ -1,0 +1,45 @@
+@media screen and (max-width: 1600px){
+	.verify-content{
+		padding: 20px;
+		box-sizing: border-box;
+		height: auto;
+		border-radius: 15px;
+		margin-top: 0px;
+		justify-content: space-between;
+		.verify-content-info{
+			.verify-content-info-header{
+				font-size: 1rem;
+				margin-bottom: 10px;
+			}
+			.verify-content-info-text{
+				font-size: 0.8rem;
+				margin-bottom: 20px;
+			}
+			.check-email{
+				margin-bottom: 30px;
+				.checkbox-email{
+					width: 14px;
+					height: 14px;
+					margin-right: 5px;
+					svg{
+						color: #ffffff;
+						width: 60%;
+					}
+				}
+				.check-email-label{
+					font-size: 0.7rem;
+				}
+			}
+			.resend-email{
+				width: 140px;
+				height: 40px;
+				font-size: 0.7rem;
+			}
+		}
+		.verify-content-image{
+			width: 400px;
+			margin-right: 150px;
+			margin-top: -30px;
+		}
+	}
+}

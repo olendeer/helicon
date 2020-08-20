@@ -1,0 +1,252 @@
+.work-describe-wrapper{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 15;
+	.work-describe-content{
+		position: relative;
+		width: 1390px;
+		height: auto;
+		border-radius: 30px;
+		box-shadow: 0 3px 23px 0 rgba(0, 0, 0, 0.16);
+		background-color: #f6f6f6;
+		box-sizing: border-box;
+		padding: 40px 35px;
+		display: flex;
+		.close-describe{
+			position: absolute;
+			top: -10px;
+			right: -50px;
+			font-size: 2rem;
+			color: #001fff;
+			transform: rotateZ(45deg);
+			cursor: pointer;
+		}
+		.work-describe-content-body{
+			width: 100%;
+			border-right: 1px solid #707070;
+			box-sizing: border-box;
+			padding-right: 25px;
+			.work-describe-content-body-header{
+				color: #363636;
+				font-size: 1.15rem;
+				margin-bottom: 30px;
+			}
+			.work-describe-content-body-description{
+				margin-bottom: 20px;
+				color: #363636;
+				font-size: 1rem;
+				line-height: 1.35rem;
+			}
+			.work-describe-org{
+				display: flex;
+				padding: 12px 0px;
+				border-top: 1px solid #707070;
+				border-bottom: 1px solid #707070;
+				margin-bottom: 15px;
+				.work-describe-org-item{
+					color: #363636;
+					font-size: 0.9rem;
+					margin-right: 20px;
+				}
+			}
+			.work-describe-project-type{
+				color: #404040;
+				font-size: 0.9rem;
+				margin-bottom: 12px;
+				span{
+					color: #001fff;
+				}
+			}
+			.work-describe-project-questions{
+				display: flex;
+				flex-direction: column;
+				border-bottom: 1px solid #707070;
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				.work-describe-project-questions-header{
+					color: #363636;
+					font-size: 0.9rem;
+					margin-bottom: 15px;
+				}
+				.work-describe-project-questions-list{
+					display: flex;
+					flex-direction: column;
+					padding-left: 20px;
+					.work-describe-project-questions-list-item{
+						color: #363636;
+						font-size: 0.9rem;
+						&:not(:last-child){
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+			.work-describe-skills{
+				padding-bottom: 15px;
+				border-bottom: 1px solid #707070;
+				.work-describe-skills-header{
+					color: #363636;
+					font-size: 0.9rem;
+					margin-bottom: 10px;
+				}
+				.work-describe-skills-list{
+					display: flex;
+					.work-describe-skills-list-item{
+						padding: 3px 10px;
+						background-color: #707070;
+						color: #ffffff;
+						font-size: 0.9rem;
+						&:not(:last-child){
+							margin-right: 15px;
+						}
+					}
+				}
+			}
+			.work-describe-proposals{
+				display: flex;
+				align-items: center;
+				color: #363636;
+				font-size: 0.9rem;
+				padding: 10px 0px;
+				border-bottom: 1px solid #707070;
+				.work-describe-proposal-item{
+					display: flex;
+					align-items: center;
+					margin-right: 20px;
+					svg{
+						margin-left: 10px;
+					}
+				}
+			}
+			.work-describe-recent{
+				display: flex;
+				flex-direction: column;
+				.work-describe-recent-header{
+					color: #1d1d1d;
+					font-size: 1.4rem;
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+				.work-describe-recent-list{
+					display: flex;
+					flex-direction: column;
+					.work-describe-recent-list-item{
+						display: flex;
+						justify-content: space-between;
+						.recent-info{
+							display: flex;
+							flex-direction: column;
+							.recent-name{
+								padding-left: 25px;
+								color: #363636;
+								font-size: 1rem;
+								margin-bottom: 15px;
+							}
+							.recent-rating{
+								display: flex;
+								align-items: center;
+								color: #363636;
+								font-size: 1rem;
+								margin-bottom: 20px;
+								.recent-rating-stars{
+									margin-right: 15px;
+								}
+							}
+							.recent-artist{
+								display: flex;
+								align-items: center;
+								font-size: 0.9rem;
+								color: #363636;
+								.recent-artist-title{
+									margin-right: 20px;
+								}
+							}
+						}
+						.recent-info-org{
+							font-size: 0.85rem;
+							color: #363636;
+						}
+					}
+				}
+			}
+		}
+		.work-describe-content-nav{
+			min-width: 435px;
+			height: 100%;
+			box-sizing: border-box;
+			padding-left: 30px;
+			display: flex;
+			flex-direction: column;
+			.submit-proposal-btn{
+				width: 100%;
+				height: 70px;
+				border-radius: 46px;
+				background-color: #ffffff;
+				border: none;
+				outline: none;
+				font-family: "HelveticaRoundedLT-Bold";
+				font-size: 0.95rem;
+				color: #001fff;
+				margin-bottom: 20px;
+				cursor: pointer;
+			}
+			.save-job-btn{
+				cursor: pointer;
+				border-radius: 46px;
+				border: solid 1px #707070;
+				width: 100%;
+				height: 70px;
+				font-family: "HelveticaRoundedLT-Bold";
+				font-size: 0.95rem;
+				background-color: transparent;
+				color: #363636;
+				margin-bottom: 35px;
+			}
+			.work-describe-about-client{
+				display: flex;
+				flex-direction: column;
+				.work-describe-about-client-header{
+					color: #363636;
+					font-size: 1.25rem;
+					margin-top: 10px;
+					margin-bottom: 15px;
+				}
+				.work-describe-about-client-payments{
+					color: #363636;
+					font-size: 0.95rem;
+					display: flex;
+					align-items: center;
+					margin-bottom: 5px;
+					svg{
+						margin-left: 10px;
+					}
+				}
+				.work-describe-about-client-rating{
+					display: flex;
+					align-items: center;
+					color: #363636;
+					font-size: 0.95rem;
+					margin-bottom: 15px;
+					.work-describe-about-client-rating-stars{
+						display: flex;
+						align-items: center;
+					}
+					.work-describe-about-client-rating-title{
+						margin-left: 15px;
+					}
+				}
+				.work-describe-about-client-chars{
+					color: #363636;
+					font-size: 0.95rem;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}	

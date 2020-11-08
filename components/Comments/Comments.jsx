@@ -2,14 +2,14 @@ import {useState} from 'react'
 import Comment from './Comment/Comment'
 import {motion} from 'framer-motion'
 import {animations} from '../../hooks/animations'
-function Comments({comments}) {
+function Comments({comments, login}) {
 	let [allComments, setAllComments] = useState(false)
 	return (
 		<div className="post-comments">
 			{allComments ? (
 				comments.map((comment, index) => {
 					return (
-						<Comment comment={comment} key={index}/>
+						<Comment comment={comment} key={index} login={login}/>
 					)
 				})
 			) : (

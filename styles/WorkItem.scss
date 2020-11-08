@@ -18,8 +18,28 @@
 	.work-jobs-list-item-description{
 		color: #363636;
 		font-size: 1rem;
+		padding-right: 20px;
 		margin-bottom: 13px;
 		line-height: 1.35rem;
+		overflow : hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 2;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		position: relative;
+		&-more{
+			position: absolute;
+			bottom: 0;
+			right: 0px;
+			color: #001fff;
+			cursor: pointer;
+		}
+		&-all{
+			display: block;
+			.work-jobs-list-item-description-more{
+				display: none;
+			}
+		}
 	}
 	.work-jobs-list-item-information{
 		display: flex;
@@ -94,9 +114,44 @@
 		justify-content: center;
 		background-color: #fff;
 		border-radius: 50%;
+		overflow: hidden;
 		svg{
 			font-size: 1.4rem;
 			margin-top: 3px;
+		}
+		.fiheart-air{
+			position: static;
+			fill: #001fff;
+			stroke: #001fff;
+			opacity: 0;
+			visibility: hidden;
+			transition-duration: .3s;
+			&-active {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		.heart-unmount{
+			position: absolute;
+			display: flex;
+			align-items: center;
+			#heart-left{
+				transition-duration: .1s;
+				transform: translateX(18px);
+			}
+			#heart-right{
+				transition-duration: .1s;
+				transform: translateX(-18px);
+			}
+			&-active{
+				background-color: #fff;
+				#heart-left{
+					transform: translateX(16px) rotateZ(-6deg);
+				}
+				#heart-right{
+					transform: translateX(-17px) rotateZ(6deg);
+				}
+			}
 		}
 	}
 	.work-jobs-list-item-btns{

@@ -1,5 +1,5 @@
 import Nav from '../components/Nav/Nav'
-import  { useState } from 'react'
+import  { useState, useRef } from 'react'
 
 import AllWorks from '../components/WorkPages/AllWorks'
 import SavedWorks from '../components/WorkPages/SavedWorks'
@@ -14,11 +14,11 @@ import {motion} from 'framer-motion'
 import {animations} from '../hooks/animations'
  
 function Work(){
-
+	let savedAnchor = useRef(null)
 	let [workNav, setWorkNav] = useState([
 		{
 			section : 'all',
-			component: <AllWorks/>,
+			component: <AllWorks savedAnchor={savedAnchor} page={'all'}/>,
 			active: true,
 			push: 0,
 			mainName: 'All works'
@@ -94,7 +94,7 @@ function Work(){
 									)
 								} else {
 									return (
-										<li className={"work-nav-list-item " + (item.active ? "work-nav-list-item-active" : '')} onClick={() => setActiveSection(index)} key={index}>{item.mainName}</li>
+										<li className={"work-nav-list-item " + (item.active ? "work-nav-list-item-active" : '')} ref={item.section === 'saved' ? savedAnchor : null} onClick={() => setActiveSection(index)} key={index}>{item.mainName}</li>
 									)
 								}
 							})}

@@ -84,7 +84,6 @@
 					height: 95px;
 					width: 95px;
 					border-radius: 10px;
-					margin-right: 10px;
 				}
 				.my-article-item-info{
 					display: flex;
@@ -136,7 +135,7 @@
 				padding-bottom: 15px;
 				cursor: pointer;
 				&:not(:last-child){
-					border-bottom: 1px solid #848484;
+					border-bottom: 1px solid #d1d1d1;
 				}
 				.news-item-image{
 					width: 50px;

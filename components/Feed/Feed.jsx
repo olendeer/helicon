@@ -5,9 +5,12 @@ import {animations} from '../../hooks/animations'
 import {BsThreeDots} from 'react-icons/bs'
 import {MdFavorite} from 'react-icons/md'
 import {FaEye} from 'react-icons/fa'
+import {RiErrorWarningLine} from 'react-icons/ri'
+import {MdClear} from 'react-icons/md'
+import { useState } from 'react'
 
 function Feed({feed}) {
-	console.log(feed)
+	let [settingIsOpen, setSettingIsOpen] = useState(false)
 	return (
 		<motion.article className="post"
 		initial="hidden"
@@ -30,8 +33,19 @@ function Feed({feed}) {
 						<span className="port-date">{feed.date}</span>
 					</motion.div>
 				</div>
-				<div className="post-setting">
+				<div className="post-setting" onClick={() => setSettingIsOpen(prev => !prev)}>
 					<BsThreeDots/>
+					<div className={"setting-menu " + (settingIsOpen ? 'setting-menu-active' : '')}>
+						<span className="setting-menu-item">
+							<RiErrorWarningLine/> Report
+						</span>
+						<span className="setting-menu-item">
+							<span className="wrap-clear">
+								<MdClear/>
+							</span>
+							Unfollow
+						</span>
+					</div>
 				</div>
 			</header>
 			<img src={feed.image} alt="post" className="image-post"/>

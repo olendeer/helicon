@@ -14,7 +14,7 @@ function Analitics(){
 		var grd1 = ctx.createLinearGradient(0, 0, 0, 500);
 		grd1.addColorStop(.5, 'rgba(94, 206, 177, 0)');
 		grd1.addColorStop(0.14, 'rgba(0, 31, 255, .14)');
-		var grd2 = ctx.createLinearGradient(0, 0, 0, 500);
+		var grd2 = ctx.createLinearGradient(0, 0, 0, 600);
 		grd2.addColorStop(.5, 'rgba(94, 206, 177, 0)');
 		grd2.addColorStop(0.14, 'rgba(31, 144, 250, 0.7)');
 		new Chart(ctx, {
@@ -23,14 +23,14 @@ function Analitics(){
 				labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
 				datasets: [{
 					label: '# of Votes',
-					data: [200, 210, 200, 230, 190, 200, 190],
+					data: [200, 250, 200, 230, 190, 200, 190],
 					borderColor : '#001fff',
 					backgroundColor: grd1,
 					pointBorderColor: 'transparent',
        				pointBackgroundColor: 'transparent'
 				}, {
 					borderColor: 'rgba(31, 144, 250, 0.31)',
-					data: [105, 104, 106, 104, 103, 105, 90],
+					data: [100, 180, 156, 174, 173, 135, 180],
 					backgroundColor: grd2,
 					pointBorderWidth: 0,
 					pointBorderColor: 'transparent',
@@ -38,15 +38,18 @@ function Analitics(){
 				}]
 			},
 			options: {
+				responsive: true,
 				legend : {
 					display: false
 				},
 				scales: {
 					yAxes: [{
+						display: false,
 						ticks: {
 							max: 300,
 							min: 0,
-							stepSize: 100
+							stepSize: 100,
+							display: false
 						},
 						gridLines: {
 							borderDash : [2, 10],
@@ -55,14 +58,19 @@ function Analitics(){
 					}],
 					xAxes: [
 						{
+							display: false,
 							gridLines: {
 								display: false,
+							},
+							ticks: {
+								display: false
 							}
 						}
-					]
+					],
 				}
 			}
 		});
+		document.getElementById('myChart').style.height = 300 + 'px'
 	}, [])
 	return (
 		<Nav>
@@ -93,15 +101,50 @@ function Analitics(){
 				variants={animations.news}
 				transition={{duration: 0.3}}>
 					<div className="chart">
-						<canvas id="myChart" width="400" height="400">
-						<p>Hello Fallback World</p>
-						</canvas>
+						<div className="mark-sum1 mark-sum">300$</div>
+						<div className="mark-sum2 mark-sum">200$</div>
+						<div className="mark-sum3 mark-sum">100$</div>
+						<div className="mark-sum4 mark-sum">0$</div>
+						<div className="mark-data">
+							<div className="mark-data-item">
+								<span className="circle"></span>
+								<div className="mark-data-item-text">523$</div>
+							</div>
+							<div className="mark-data-item">
+								<span className="circle"></span>
+								<div className="mark-data-item-text">553</div>
+							</div>
+						</div>
+						<div className="chart-wrapper">
+							<canvas id="myChart" height="400">
+								<p>Hello Fallback World</p>
+							</canvas>
+						</div>
+						<div className="mark-description">
+							<div className="mark-description-item">
+								<div className="circle"></div>
+								<div className="mark-description-item-text">Earned $</div>
+							</div>
+							<div className="mark-description-item">
+								<div className="circle"></div>
+								<div className="mark-data-item-text">Spent on advertisement</div>
+							</div>
+						</div>
+						<div className="mark-bottom">
+							<div className="mark-bottom-item">Jan</div>
+							<div className="mark-bottom-item">Feb</div>
+							<div className="mark-bottom-item">Mar</div>
+							<div className="mark-bottom-item">Apr</div>
+							<div className="mark-bottom-item">May</div>
+							<div className="mark-bottom-item">Jun</div>
+							<div className="mark-bottom-item">Jul</div>
+						</div>
 					</div>
 					<div className="chart-data">
 						<div className="chart-data-item">
 							<div className="chart-data-item-name">Total Earnings</div>
 							<div className="chart-data-item-value">
-							987,23$
+							987,23 <span>$</span>
 							</div>
 							<div className="chart-data-item-arrow">
 								<TiArrowDownThick/>
@@ -110,7 +153,7 @@ function Analitics(){
 						<div className="chart-data-item">
 							<div className="chart-data-item-name">Earned in April</div>
 							<div className="chart-data-item-value">
-							94,23$
+							94,23 <span>$</span>
 							</div>
 							<div className="chart-data-item-arrow">
 								<TiArrowDownThick/>
@@ -151,7 +194,7 @@ function Analitics(){
 					animate="visible"
 					variants={animations.avatar}
 					transition={{duration: 0.3, delay: .1}}>
-						Advertisument
+						Advertisement
 					</motion.div>
 					<motion.div className="analitics-up-item"
 					initial="hidden"

@@ -26,6 +26,18 @@
 					margin-right: -15px;
 				}
 			}
+			.work-filter-list-item-choices{
+				top: 38px;
+				font-size: 0.6rem;
+				box-sizing: border-box;
+				padding: 10px 20px;
+				border-radius: 10px;
+				color: #363636;
+				box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+				span:not(:last-child){
+					margin-bottom: 5px;
+				}
+			}
 		}
 	}
 	.work-filter-clear{

@@ -16,9 +16,9 @@ import InsertInvitationIcon from '@material-ui/icons/InsertInvitation';
 import {MdGavel as GavelIcon } from 'react-icons/md'
 
 
-function Nav({children, footer}){
+function Nav({children, footer, isLogin}){
 	let pathname = process.browser ? window.location.pathname : undefined
-	let [login, setLogin] = useState(false)
+	let [login, setLogin] = useState(isLogin)
 	let [menu, setMenu] = useState([
 		{
 			icon : (
@@ -97,7 +97,7 @@ function Nav({children, footer}){
 					</section>
 				</motion.div>
 			<Footer footer={footer}/>
-			{singInIsOpen ? <SingIn setSingInIsOpen={setSingInIsOpen} setLogin={setLogin}/> : ''}
+			{singInIsOpen ? <SingIn setSingInIsOpen={setSingInIsOpen}/> : ''}
 			{/* <Hint/> */}
 		</>
 	)

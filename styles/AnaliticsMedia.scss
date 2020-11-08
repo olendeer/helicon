@@ -29,6 +29,11 @@
 					}
 					.chart-data-item-value{
 						font-size: 1rem;
+						span{
+							font-weight: 900;
+							margin-left: -6px;
+							font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+						}
 					}
 					.chart-data-item-arrow{
 						right: -5px;

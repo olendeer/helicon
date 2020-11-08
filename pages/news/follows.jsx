@@ -11,17 +11,20 @@ function Follows({feedsData}){
 	return (
 		<Nav>
 			<BreadCrumbs breadcrumbs={[{name: 'Main', link: '/news'}]}/>
-			<motion.section className="tape"
-			initial="hidden"
-			animate="visible"
-			variants={animations.feed}
-			transition={{duration: 0.5}}>
-				{feedsData.map((feed, index) => {
-					return (
-						<Feed feed={feed} key={index}/>
-					)
-				})}
-			</motion.section>
+			<div className="follows-wrap">
+				<motion.section className="tape"
+				initial="hidden"
+				animate="visible"
+				variants={animations.feed}
+				transition={{duration: 0.5}}>
+					{feedsData.map((feed, index) => {
+						return (
+							<Feed feed={feed} key={index}/>
+						)
+					})}
+				</motion.section>
+				<div className="messages"></div>
+			</div>
 		</Nav>
 	)
 }

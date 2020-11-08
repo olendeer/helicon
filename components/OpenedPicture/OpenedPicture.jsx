@@ -9,7 +9,8 @@ import {animations} from '../../hooks/animations'
 
 
 
-function OpenedPicture({isOpen, setIsOpen, picture, setIsOpenAddBasket}){
+function OpenedPicture({isOpen, setIsOpen, picture, setIsOpenAddBasket, login, setSingInIsOpen}){
+
 	let comments = [
 		{
 			img: require('../../public/img/test_avatar.png'),
@@ -79,7 +80,11 @@ function OpenedPicture({isOpen, setIsOpen, picture, setIsOpenAddBasket}){
 					transition={{duration: 0.2}}>
 						<span className="pay-price">560$</span>
 						<button className="buy-btn" onClick={() => {
-							setIsOpenAddBasket(true)
+							if(login){
+								setIsOpenAddBasket(true)
+							} else {
+								setSingInIsOpen(true)
+							}
 							setIsOpen(false)	
 						}}>Buy</button>
 					</motion.div>
@@ -92,15 +97,17 @@ function OpenedPicture({isOpen, setIsOpen, picture, setIsOpenAddBasket}){
 					<span className="description-header">Lorem, ipsum.</span>
 					<p className="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi explicabo blanditiis exercitationem vero non error! Reprehenderit saepe consequatur dicta laboriosam.</p>
 				</motion.div>
-				<Comments comments={comments}/>
-				<motion.div className="send-comment"
-				initial="hidden"
-				animate="visible"
-				variants={animations.moreBtn}
-				transition={{duration: 0.2, delay: .3}}>
-					<img src={require('../../public/img/test_avatar.png')} alt="" className="comment-user-avatar"/>
-					<input type="text" className="your-comment" placeholder="Leave a comment..."/>
-				</motion.div>
+				<Comments comments={comments} login={login}/>
+				{login ? (
+					<motion.div className="send-comment"
+					initial="hidden"
+					animate="visible"
+					variants={animations.moreBtn}
+					transition={{duration: 0.2, delay: .3}}>
+						<img src={require('../../public/img/test_avatar.png')} alt="" className="comment-user-avatar"/>
+						<input type="text" className="your-comment" placeholder="Leave a comment..."/>
+					</motion.div>
+				) : ''}
 			</motion.div>
 		</div>
 	)

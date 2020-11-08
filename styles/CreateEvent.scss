@@ -1,11 +1,11 @@
 .create-event-wrapper{
 	position: absolute;
 	width: 100vw;
-	height: 100vh;
+	height: 150vh;
 	top: -70px;
 	left: -108px;
 	z-index: 15;
-	background-color: transparent;
+	background-color: rgba(#707070, 0.6);
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -22,6 +22,16 @@
 		flex-direction: column;
 		margin-top: 100px;
 		margin-bottom: 100px;
+		position: relative;
+		.create-event-close{
+			position: absolute;
+			top: 0;
+			right: -28px;
+			font-size: 1.4rem;
+			color: #ffffff;
+			transform: rotateZ(45deg);
+			cursor: pointer;
+		}
 		.create-event-content-header{
 			color: #1d1d1d;
 			font-size: 1.5rem;
@@ -238,7 +248,7 @@
 				.checkbox-item-box-check{
 					min-width: 26px;
 					height: 25px;
-					border: solid 1px #707070;
+					border-radius: 3px;
 					background-color: #e6e6e6;
 					margin-right: 15px;
 				}
@@ -256,7 +266,7 @@
 				height: 56px;
 				border-radius: 16px;
 				background-color: #e6e6e6;
-				font-family: 'SegoeUI';
+				font-family: "HelveticaRoundedLT-Bold";
 				font-size: 1.75rem;
 				color: #707070;
 				border: none;
@@ -268,7 +278,7 @@
 				height: 56px;
 				border: none;
 				outline: none;
-				font-family: 'SegoeUI';
+				font-family: "HelveticaRoundedLT-Bold";
 				color: #707070;
 				font-size: 1.75rem;
 				border-radius: 17px;

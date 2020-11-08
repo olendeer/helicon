@@ -98,7 +98,7 @@ function Palette() {
 					variants={animations.avatar}
 					transition={{duration: 0.2, delay: .4}}>{color}</motion.div>
 					<motion.div className="save-color" onClick={() => {
-						if(userColors.length < 6){
+						if(userColors.length < 5){
 							setUserColor(userColors.concat(color))
 						}	
 					}}

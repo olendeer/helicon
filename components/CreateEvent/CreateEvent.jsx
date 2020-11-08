@@ -3,12 +3,17 @@ import {FaRegCalendar} from 'react-icons/fa'
 import {BsClock} from 'react-icons/bs'
 import {FiLink2} from 'react-icons/fi'
 import {AiOutlinePlus} from 'react-icons/ai'
+import {TiPlus} from 'react-icons/ti'
+
 import { useState } from 'react'
 function CreateEvent({setCreateEventIsOpen}){
 	let [addLink, setAddLink] = useState(false)
 	return (
 		<div className="create-event-wrapper">
 			<div className="create-event-content">
+				<div className="create-event-close" onClick={() => setCreateEventIsOpen(false)}>
+					<TiPlus/>
+				</div>
 				<div className="necessary">
 					<div className="create-event-content-header">Necessary information</div>
 					<div className="create-event-content-title">To create an event, provide the following information.</div>

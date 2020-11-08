@@ -1,29 +1,34 @@
 @media screen and (max-width: 1600px){
 	.portfolio{
-		padding: 8px 15px 8px 15px;
+		padding: 4px 15px 0px 15px;
 		height: auto;
 		border-radius: 15px;
 		.portfolio-header{
 			.portfolio-header-item{
-				font-size: 0.6rem;
+				font-size: 0.5rem;
 				width: 70px;
-				height: 25px;
+				height: 20px;
 				&:not(:last-child){
 					margin-right: 15px;
 				}
 			}
 		}
 		.portfolio-list{
-			margin-top: 15px;
+			margin-top: 10px;
 			.portfolio-item{
 				margin-right: 15px;
-				margin-bottom: 15px;
+				margin-bottom: 10px;
+				.portfolio-item-image{
+					max-height: 130px;
+					border-radius: 10px;
+					width: auto;
+				}
 				.portfolio-item-info{
 					.portfolio-item-price{
-						font-size: 0.65rem;
+						font-size: 0.6rem;
 					}
 					.portfolio-item-views{
-						font-size: 0.6rem;
+						font-size: 0.55rem;
 					}
 				}
 			}

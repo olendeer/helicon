@@ -9,7 +9,7 @@
 }
 .opened-auction{
 	display: flex;
-	font-family: 'SegoeUI';
+	// font-family: 'SegoeUI';
 	margin-bottom: 100px;
 }
 .opened-auction-image{
@@ -164,13 +164,13 @@
 				padding-left: 10px;
 				padding-right: 10px;
 				border-radius: 50px;
-				border: solid 1px #e1e1e1;
+				border: 1px solid #e1e1e1;
 				background-color: #ffffff;
 				outline: none;
 				margin-bottom: 5px;
 			}
 			.other-information{
-				font-family: 'SegoeUI';
+				// font-family: 'SegoeUI';
 				color: #707070;
 				font-size: 0.65rem;
 				text-align: right;
@@ -188,7 +188,7 @@
 	box-sizing: border-box;
 	border-radius: 38px;
 	background-color: #ffffff;
-	font-family: 'SegoeUI';
+	// font-family: 'SegoeUI';
 	.auction-detailed-information-header{
 		display: flex;
 		justify-content: flex-start;

@@ -1,3 +1,6 @@
+import {isLogin} from '../../utilities/islogin'
+
+
 import Link from 'next/link'
 import Nav from '../../components/Nav/Nav'
 import Article from '../../components/Article/Article'
@@ -9,7 +12,7 @@ import {animations} from '../../hooks/animations'
 
 
 
-function News({news, followNews, topArticle}){
+function News({news, followNews, topArticle, login}){
 	let months = [
 		'Jan',
 		'Feb',
@@ -26,43 +29,45 @@ function News({news, followNews, topArticle}){
 	]
 	let date = new Date()
 	return (
-		<Nav>
+		<Nav isLogin={login}>
 			<div className="follows-news">
-				<motion.article className="followers-news"
-					initial="hidden"
-					animate="visible"
-					variants={animations.news}
-					transition={{duration: .5, delay: .1}}>
-					<header className='header-news'>News from your Follows</header>
-					<div className="article-content">
-						<img src={followNews.img} alt="" className="article-bg"/>
-						<div className="article-info">
-							{followNews.todos.map((todo, index) => {
-								return (
-									<div className="owner-article" key={index}>
-										<img src={followNews.owner.avatar} alt="" className="owner-avatar"/>
-										<div className="article-post">
-											<span className="owner-name">{followNews.owner.name}</span>
-											<span className="article-date">{followNews.date}</span>
+				{login ? (
+					<motion.article className="followers-news"
+						initial="hidden"
+						animate="visible"
+						variants={animations.news}
+						transition={{duration: .5, delay: .1}}>
+						<header className='header-news'>News from your Follows</header>
+						<div className="article-content">
+							<img src={followNews.img} alt="" className="article-bg"/>
+							<div className="article-info">
+								{followNews.todos.map((todo, index) => {
+									return (
+										<div className="owner-article" key={index}>
+											<img src={followNews.owner.avatar} alt="" className="owner-avatar"/>
+											<div className="article-post">
+												<span className="owner-name">{followNews.owner.name}</span>
+												<span className="article-date">{followNews.date}</span>
+											</div>
+											<span className="post-description">
+												{todo}
+											</span>
 										</div>
-										<span className="post-description">
-											{todo}
-										</span>
-									</div>
-								)
-							})}
+									)
+								})}
+							</div>
 						</div>
-					</div>
-					<Link href="/news/follows">
-						<motion.button 
-							className="more-news"
-							initial="hidden"
-							animate="visible"
-							variants={animations.moreBtn}
-							transition={{duration: .3, delay: .3}}
-						>More</motion.button>
-					</Link>
-				</motion.article>
+						<Link href="/news/follows">
+							<motion.button 
+								className="more-news"
+								initial="hidden"
+								animate="visible"
+								variants={animations.moreBtn}
+								transition={{duration: .3, delay: .3}}
+							>More</motion.button>
+						</Link>
+					</motion.article>
+				) : 'Зарегистрируся'}
 				<Link href="/news/articles?type=top">
 					<motion.article className="top-news"
 						initial="hidden"
@@ -153,6 +158,7 @@ function News({news, followNews, topArticle}){
 }
 
 export async function getServerSideProps(context){
+	const login = isLogin(context.req, context.res)
 	const userID = context.query.userID //поиск инфы для юзера по его id
 	//один запрос в монго для получения 5ти топ новостей
 	const news = [
@@ -211,6 +217,7 @@ export async function getServerSideProps(context){
 
 	return {
 		props: {
+			login,
 			news,
 			followNews,
 			topArticle

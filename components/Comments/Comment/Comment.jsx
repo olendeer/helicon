@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import {animations} from '../../../hooks/animations'
 import {FaReplyAll} from 'react-icons/fa'
 import {MdFavorite} from 'react-icons/md'
-function Comment({comment}) {
+function Comment({comment, login}) {
 	return(
 		<motion.div className="comment-item"
 		initial="hidden"
@@ -15,9 +15,11 @@ function Comment({comment}) {
 				<span className="comment-name">{comment.name}</span>
 				<p className="comment-text">{comment.text}</p>
 				<div className="comment-estimations">
-					<div className="comment-reply">
-						<FaReplyAll/>
-					</div>
+					{login ? (
+						<div className="comment-reply">
+							<FaReplyAll/>
+						</div>
+					) : ''}
 					<div className="comment-likes">
 						<MdFavorite/>
 						<span className="count">{comment.likes}</span>

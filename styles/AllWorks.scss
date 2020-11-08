@@ -10,6 +10,7 @@
 			height: 54px;
 			border-radius: 27px;
 			background-color: #f6f6f6;
+			position: relative;
 			&:not(:last-child){
 				margin-right: 40px;
 			}
@@ -38,6 +39,32 @@
 				svg{
 					font-size: 3rem;
 					margin-right: -15px;
+				}
+			}
+			.work-filter-list-item-choices{
+				width: 100%;
+				position: absolute;
+				top: 56px;
+				display: flex;
+				flex-direction: column;
+				z-index: 15;
+				background-color: #f6f6f6;
+				font-size: 0.8rem;
+				box-sizing: border-box;
+				padding: 10px 25px;
+				border-radius: 15px;
+				color: #363636;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-10px);
+				transition-duration: .1s;
+				span:not(:last-child){
+					margin-bottom: 5px;
+				}
+				&-active{
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0px);
 				}
 			}
 		}

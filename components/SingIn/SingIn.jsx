@@ -6,7 +6,7 @@ import {AiFillFacebook} from 'react-icons/ai'
 import {animations} from '../../hooks/animations'
 import { motion } from 'framer-motion';
 
-function SingIn({setSingInIsOpen, setLogin}){
+function SingIn({setSingInIsOpen}){
 	let [activeBtn, setActiveBtn] = useState(1)
 	let [stay, setStay] = useState(false)
 	let [send, setSend] = useState(false)
@@ -71,7 +71,7 @@ function SingIn({setSingInIsOpen, setLogin}){
 						</motion.div>
 					)}
 				</div>
-				<motion.button className="sing-in-send-btn" onClick={() => setLogin(true)}
+				<motion.button className="sing-in-send-btn"
 				initial="hidden"
 				animate="visible"
 				variants={animations.news}

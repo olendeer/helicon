@@ -4,20 +4,23 @@ import OpenedPicture  from '../components/OpenedPicture/OpenedPicture'
 import AddStory from '../components/Story/AddStory'
 import Storys from '../components/Story/Storys'
 import AddBasket from '../components/AddBasket/AddBasket'
+import SingIn from '../components/SingIn/SingIn'
 
+import {isLogin} from '../utilities/islogin'
 import { useState, useEffect } from 'react';
 
 import {motion} from 'framer-motion'
 import {animations} from '../hooks/animations'
  
-function FineArt({pictures}) {
-	let [login, setLogin] = useState(false)
+function FineArt({pictures, login}) {
+	// let [login, setLogin] = useState(false)
 	let [isOpenPicture, setIsOpenPicture] = useState(false)
 	let [activePicture, setActivePicture] = useState(null)
 	let [isOpenAddStory, setIsOpenAddStory] = useState(false)
 	let [isOpenStorys, setIsOpenStorys] = useState(false)
 	let [isOpenAddBasket, setIsOpenAddBasket] = useState(false)
 	let [resetFilters, setResetFilters] = useState(false)
+	let [singInIsOpen, setSingInIsOpen] = useState(false)
 	let [filters, setFilters] = useState([
 		{
 			header: 'Category/technics',
@@ -124,15 +127,17 @@ function FineArt({pictures}) {
 				<section className="progress">
 					<div className="progress-header">Today's Works in Progress</div>
 					<div className="progress-items">
-						<motion.div className="progress-item progress-add"
-						initial="hidden"
-						animate="visible"
-						variants={animations.news}
-						transition={{duration: 0.3, delay: .2}}
-						onClick={() => setIsOpenAddStory(true)}>
-							<span className="progress-name">add your</span>
-							<div className="progress-circle"></div>
-						</motion.div>
+						{login ? (
+							<motion.div className="progress-item progress-add"
+							initial="hidden"
+							animate="visible"
+							variants={animations.news}
+							transition={{duration: 0.3, delay: .2}}
+							onClick={() => setIsOpenAddStory(true)}>
+								<span className="progress-name">add your</span>
+								<div className="progress-circle"></div>
+							</motion.div>
+						) : ''}
 						<motion.div className="progress-item"
 						initial="hidden"
 						animate="visible"
@@ -169,17 +174,20 @@ function FineArt({pictures}) {
 					})}
 				</section>
 			</div>
-			{isOpenPicture ? <OpenedPicture isOpen={isOpenPicture} setIsOpen={setIsOpenPicture} setIsOpenAddBasket={setIsOpenAddBasket} picture={activePicture}/> : ''}
+			{isOpenPicture ? <OpenedPicture isOpen={isOpenPicture} setIsOpen={setIsOpenPicture} setIsOpenAddBasket={setIsOpenAddBasket} picture={activePicture} login={login} setSingInIsOpen={setSingInIsOpen}/> : ''}
 			{isOpenAddStory ? <AddStory isOpen={isOpenAddStory} setIsOpen={setIsOpenAddStory}/> : ''}
 			{isOpenStorys ? <Storys isOpen={isOpenStorys} setIsOpen={setIsOpenStorys}/> : ''}
 			{isOpenAddBasket ? <AddBasket setIsOpenAddBasket={setIsOpenAddBasket}/> : ''}
+			{singInIsOpen ? <SingIn setSingInIsOpen={setSingInIsOpen}/> : ''}
 		</Nav>
 	)
 }
 
-export async function getServerSideProps(){
+export async function getServerSideProps(context){
+	const login = isLogin(context.req, context.res)
 	return {
 		props: {
+			login: login,
 			pictures: [
 				'img/arts/art1.png',
 				'img/arts/art8.png',

@@ -32,6 +32,109 @@
 		display: flex;
 		.chart{
 			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.chart-wrapper{
+				width: 400px;
+				min-height: 400px;
+				height: 400px;
+			}
+			.mark-sum{
+				position: absolute;
+				left: 8px;
+				width: 40px;
+				height: 24px;
+				border-radius: 6px;
+				background-color: #ffffff;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 0.5rem;
+				color: #1d3041;
+			}
+			.mark-sum1{
+				top: 5%;
+			}
+			.mark-sum2{
+				top: 23%;
+			}
+			.mark-sum3{
+				top: 50%;
+			}
+			.mark-sum4{
+				top: 76%;
+			}
+			.mark-data{
+				position: absolute;
+				display: flex;
+				align-items: center;
+				.mark-data-item{
+					font-size: 0.5rem;
+					color: #425063;
+					display: flex;
+					align-items: center;
+					&:first-child{
+						.circle{
+							width: 5px;
+							height: 5px;
+							background-color: #5eceb1;
+							border-radius: 50%;
+							margin-right: 3px;
+						}
+					}
+					&:last-child{
+						margin-left: 10px;
+						.circle{
+							width: 5px;
+							height: 5px;
+							background-color: #1f90fa;
+							border-radius: 50%;
+							margin-right: 3px;
+						}
+					}
+				}
+			}
+			.mark-description{
+				display: flex;
+				align-items: center;
+				margin-top: -70px;
+				.mark-description-item{
+					font-size: 0.5rem;
+					color: #425063;
+					display: flex;
+					align-items: center;
+					&:first-child{
+						.circle{
+							width: 5px;
+							height: 5px;
+							background-color: #5eceb1;
+							border-radius: 50%;
+							margin-right: 3px;
+						}
+					}
+					&:last-child{
+						margin-left: 10px;
+						.circle{
+							width: 5px;
+							height: 5px;
+							background-color: #1f90fa;
+							border-radius: 50%;
+							margin-right: 3px;
+						}
+					}
+				}
+			}
+			.mark-bottom{
+				display: flex;
+				width: 100%;
+				align-items: center;
+				justify-content: space-between;
+				color: #425063;
+				margin-top: 20px;
+				font-size: 0.6rem;
+
+			}
 		}
 		.chart-data{
 			display: flex;

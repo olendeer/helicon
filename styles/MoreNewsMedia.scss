@@ -24,9 +24,31 @@
 				.my-article-content-item-header{
 					font-size: 0.7rem;
 					margin-bottom: 5px;
+					cursor: pointer;
 				}
 				.my-article-content-item-text{
 					font-size: 0.5rem;
+					line-height: 0.7rem;
+					overflow : hidden;
+					padding-right: 22px;
+					text-overflow: ellipsis;
+					-webkit-line-clamp: 2;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					position: relative;
+					&-more{
+						position: absolute;
+						bottom: 0;
+						right: 0px;
+						color: #001fff;
+						cursor: pointer;
+					}
+					&-all{
+						display: block;
+						.my-article-content-item-text-more{
+							display: none;
+						}
+					}
 				}
 			}
 			.my-article-estimation{

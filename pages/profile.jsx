@@ -59,7 +59,9 @@ function Profile({articles, friends, news, portfolio, feeds, username}){
 							return (
 								<Link href='/news/article?type=articles' key={index}>
 									<div className="my-article-item">
-										<img src={article.img} alt="" className="my-article-item-image"/>
+										<div className="my-article-item-image-wrap">
+											<img src={article.img} alt="" className="my-article-item-image"/>
+										</div>
 										<div className="my-article-item-info">
 											<h3 className="my-article-item-header">{article.header}</h3>
 											<p className="my-article-item-text">{article.text}</p>
@@ -259,35 +261,35 @@ export async function getServerSideProps(context){
 				],
 				friends: [
 					{
-						img: require('../public/img/test_avatar.png'),
+						img: require('../public/img/arts/art1.png'),
 						name: 'Julia Dung'
 					},
 					{
-						img: require('../public/img/test_avatar.png'),
+						img: require('../public/img/arts/art1.png'),
 						name: 'Julia Dung'
 					},
 					{
-						img: require('../public/img/test_avatar.png'),
+						img: require('../public/img/arts/art1.png'),
 						name: 'Julia Dung'
 					},
 					{
-						img: require('../public/img/test_avatar.png'),
+						img: require('../public/img/arts/art1.png'),
 						name: 'Julia Dung'
 					},
 					{
-						img: require('../public/img/test_avatar.png'),
+						img: require('../public/img/arts/art1.png'),
 						name: 'Julia Dung'
 					},
 					{
-						img: require('../public/img/test_avatar.png'),
+						img: require('../public/img/arts/art1.png'),
 						name: 'Julia Dung'
 					},
 					{
-						img: require('../public/img/test_avatar.png'),
+						img: require('../public/img/arts/art1.png'),
 						name: 'Julia Dung'
 					},
 					{
-						img: require('../public/img/test_avatar.png'),
+						img: require('../public/img/arts/art1.png'),
 						name: 'Julia Dung'
 					}
 				],
@@ -424,56 +426,56 @@ export async function getServerSideProps(context){
 			],
 			friends: [
 				{
-					img: require('../public/img/test_avatar.png'),
+					img: require('../public/img/arts/art1.png'),
 					name: 'Julia Dung'
 				},
 				{
-					img: require('../public/img/test_avatar.png'),
+					img: require('../public/img/arts/art1.png'),
 					name: 'Julia Dung'
 				},
 				{
-					img: require('../public/img/test_avatar.png'),
+					img: require('../public/img/arts/art1.png'),
 					name: 'Julia Dung'
 				},
 				{
-					img: require('../public/img/test_avatar.png'),
+					img: require('../public/img/arts/art1.png'),
 					name: 'Julia Dung'
 				},
 				{
-					img: require('../public/img/test_avatar.png'),
+					img: require('../public/img/arts/art1.png'),
 					name: 'Julia Dung'
 				},
 				{
-					img: require('../public/img/test_avatar.png'),
+					img: require('../public/img/arts/art1.png'),
 					name: 'Julia Dung'
 				},
 				{
-					img: require('../public/img/test_avatar.png'),
+					img: require('../public/img/arts/art1.png'),
 					name: 'Julia Dung'
 				},
 				{
-					img: require('../public/img/test_avatar.png'),
+					img: require('../public/img/arts/art1.png'),
 					name: 'Julia Dung'
 				}
 			],
 			news: [
 				{
-					img: require('../public/img/arts/art3.png'),
+					img: require('../public/img/arts/art5.png'),
 					header: 'Lorem ipsum dolor sit amet consectetur.',
 					date: '24.06.2020'
 				},
 				{
-					img: require('../public/img/arts/art3.png'),
+					img: require('../public/img/arts/art5.png'),
 					header: 'Lorem ipsum dolor sit amet consectetur.',
 					date: '24.06.2020'
 				},
 				{
-					img: require('../public/img/arts/art3.png'),
+					img: require('../public/img/arts/art5.png'),
 					header: 'Lorem ipsum dolor sit amet consectetur.',
 					date: '24.06.2020'
 				},
 				{
-					img: require('../public/img/arts/art3.png'),
+					img: require('../public/img/arts/art5.png'),
 					header: 'Lorem ipsum dolor sit amet consectetur.',
 					date: '24.06.2020'
 				}
